@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+   <head lang="en">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Vehicle Details</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700,600,800,900,300' rel='stylesheet' type='text/css'>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+      <link rel="stylesheet" type="text/css" href="css/default.css">
+      <link rel="stylesheet" type="text/css" href="css/responsive.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+      <link rel="stylesheet" type="text/css" href="layerslider/layerslider.css">
+      <link href="http://cdn.shopify.com/s/files/1/0067/5617/1846/t/2/assets/timber.scss.css" rel="stylesheet" type="text/css" media="all" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </head>
+   <body>
+      <!--Start Header section-->
+    <section id="header">
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 responsive-width-top">
+                            <div class="links">
+                                <a class="nav-toggle"><button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 responsive-width-top">
+                            <div class="links text-right">
+                                <select class="select-language">
+                                    <option>EN</option>
+                                    <option>FR</option>
+                                    <option>AR</option>
+                                </select>
+                                <a href="accounts/dashboard.blade.php">My Account</a> |
+                                <a href="accounts/login.blade.php">Login</a> |
+                                <a href="accounts/registration.blade.php">Register</a> |
+                                <a href="ads/post_ads.blade.php">Post a Ad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end top bar-->
+
+            <!--start menu-bar-->
+            <div class="menu">
+                <div class="menu-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="classify"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row navbar-search">
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>City</option>
+                                        <option>Casablanca</option>
+                                        <option>Fez</option>
+                                        <option>Tangier</option>
+                                        <option>Marrakesh</option>
+                                        <option>Salé</option>
+                                        <option>Meknes</option>
+                                        <option>Rabat</option>
+                                        <option>Kenitra</option>
+                                        <option>Tetouan</option>
+                                        <option>Beni Mellal</option>
+                                        <option>Safi</option>
+                                        <option>Oujda</option>
+                                        <option>Inezgane Ait Melloul</option>
+                                        <option>Agadir-Ida Ou Tanan</option>
+                                        <option>Nador</option>
+                                        <option>Khouribga</option>
+                                        <option>Settat</option>
+                                        <option>Skhirate-Temara</option>
+                                        <option>El Jadida</option>
+                                        <option>Khenifra</option>
+                                        <option>Taza</option>
+                                        <option>Mohammedia</option>
+                                        <option>Larache</option>
+                                        <option>Khemisset</option>
+                                        <option>Sidi Kacem</option>
+                                        <option>Azrou</option>
+                                        <option>Errachidia</option>
+                                        <option>Tarudant</option>
+                                        <option>El Kelaa Des Sraghna</option>
+                                        <option>Berkane</option>
+                                        <option>Ouarzazate</option>
+                                        <option>Taourirt</option>
+                                        <option>Al Hoceima</option>
+                                        <option>Essaouira</option>
+                                        <option>El Hajeb</option>
+                                        <option>Tiznit</option>
+                                        <option>Azilal</option>
+                                        <option>Ifrane</option>
+                                        <option>Mediouna</option>
+                                        <option>Benslimane</option>
+                                        <option>Taounate</option>
+                                        <option>Jerada</option>
+                                        <option>Sefrou</option>
+                                        <option>Figuig</option>
+                                        <option>Tan-Tan</option>
+                                        <option>Nouaceur</option>
+                                        <option>Ouezzane</option>
+                                        <option>Chefchaouen</option>
+                                        <option>Boulemane</option>
+                                        <option>Al Haouz</option>
+                                        <option>Chichaoua</option>
+                                        <option>Zagora</option>
+                                        <option>Chtouka Ait Baha</option>
+                                        <option>Mechra Bel Ksiri</option>
+                                        <option>Moulay Yacoub</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>All Categories</option>
+
+                                        <option>Cars &amp; Bikes</option>
+                                        <option>Mobiles &amp; Tablets</option>
+                                        <option>Electronics &amp; Appliances</option>
+                                        <option>Real Estate</option>
+                                        <option>Services</option>
+                                        <option>Jobs</option>
+                                        <option>Home &amp; Lifestyle</option>
+                                        <option>Education &amp; Training</option>
+                                        <option>Pets &amp; Pet Care</option>
+                                        <option>Entertainment</option>
+                                        <option>Community</option>
+                                        <option>Events</option>
+                                        <option>Matrimonial</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 p-2 search-box">
+                                    <input class="keyword" type="text" name="keyword" placeholder="Search here...">
+                                    <button class="btn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div><!--end menu-bar-->
+
+            <div class="vehicle-menu">
+                        <div class="menu2">
+                            <div>
+                                <div class="text-center">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-sm-12 responsive-width-top">
+                                                <div class="links">
+                                                    <a href="#" class="active">Used Cars</a>
+                                                    <a href="#">New Cars</a>
+                                                    <a href="#">Bikes</a>
+                                                    <a href="#">Commercial Vehicles</a>
+                                                    <a href="#">Spare parts & Accessories</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </header>
+    </section><!--End Header section-->
+      <main class="mt-5 mb-5">
+         <div id="shopify-section-product-template" class="shopify-section">
+            <div class="single-product-area mt-80 mb-80">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="gallery_wrapper">
+                           <div class="col-md-8 image_gallery lightbox_trigger special_border" data-slider-no="1" style="background-image:url(images/single-product.png)  ">
+                              <div class="img_listings_overlay"></div>
+                           </div>
+                           <div class="col-md-4 image_gallery lightbox_trigger  special_border_top  " data-slider-no="2" style="background-image:url(images/single-product1.png)">
+                              <div class="img_listings_overlay"></div>
+                           </div>
+                           <div class="col-md-4 image_gallery lightbox_trigger    " data-slider-no="3" style="background-image:url(images/single-product2.png)">
+                              <div class="img_listings_overlay"></div>
+                           </div>
+                           <div class="col-md-4 image_gallery lightbox_trigger  special_border_left  " data-slider-no="4" style="background-image:url(images/single-product3.png)">
+                              <div class="img_listings_overlay"></div>
+                           </div>
+                           <div class="col-md-4 image_gallery lightbox_trigger    " data-slider-no="5" style="background-image:url(images/single-product.png)">
+                              <div class="img_listings_overlay"></div>
+                           </div>
+                           <div class="col-md-4 image_gallery last_gallery_item lightbox_trigger" data-slider-no="6" style="background-image:url(images/single-product1.png)  ">
+                              <div class="img_listings_overlay img_listings_overlay_last"></div>
+                              <span class="img_listings_mes">See all 7 photos</span>
+                           </div>
+                        </div>
+                          </div>
+
+                          <div class="col-md-12 grid-area-gap">
+                            <ul class="spec__icons">
+
+
+                              <li><span aria-hidden="" class="icon icon--engine"></span><span class="spec__caption"><div>Front Wheel Drive</div>1.2 litre</span></li>
+                              <li>
+                                <div class="mileage">11,188</div>
+                                <span class="spec__caption">Mileage</span>
+                              </li>
+                              <li><span aria-hidden="" class="icon icon--fuel"></span><span class="spec__caption">Petrol</span></li>
+                              <li><span aria-hidden="" class="icon icon--calendar-blank reg__month" data-reg-month="JUN 2018"></span><span class="spec__caption reg__year">Reg Date</span></li>
+                              <li><span aria-hidden="" class="icon icon--gears"></span><span class="spec__caption">Manual</span></li>
+                            </ul>
+                            <ul class="spec__highlight">
+                              <li class="highlight" aria-describedby="mpg-desc" data-l3="vdp tooltip" data-intloc="page content" data-element="miles per gallon">
+                                <a href="#" class="highlight__inner highlight__info" data-info="mpg-desc">
+                                  <span class="highlight__figure">57</span>
+                                  <span class="highlight__caption">MPG</span>
+                                  <span class="highlight__link">More Info &gt;</span>
+                                  <span id="mpg-desc" class="visually-hidden" title="Miles per gallon">We use the official NEDC combined figure for CO2 emissions and MPG to calculate the number of miles a vehicle has travelled by the amount of gallons needed to refill the tank. This gives us an accurate MPG reading.</span>
+                                </a>
+                              </li>
+                              <li class="highlight" aria-describedby="ctf-desc" data-l3="vdp tooltip" data-intloc="page content" data-element="cost to fill">
+                                <a href="#" class="highlight__inner highlight__info" data-info="ctf-desc">
+                                  <span class="highlight__figure">£42</span>
+                                  <span class="highlight__caption">Cost to fill</span>
+                                  <span class="highlight__link">More Info &gt;</span>
+                                  <span id="ctf-desc" class="visually-hidden" title="Cost to fill">We use national average fuel price data from Experian and the vehicle’s fuel tank capacity to calculate this value.</span>
+                                </a>
+                              </li>
+                              <li class="highlight" aria-describedby="range-desc" data-l3="vdp tooltip" data-intloc="page content" data-element="range">
+                                <a href="#" data-info="range-desc" class="highlight__inner highlight__info">
+                                  <span class="highlight__figure">438</span>
+                                  <span class="highlight__caption">Range(miles)</span>
+                                  <span class="highlight__link">More Info &gt;</span>
+                                  <span id="range-desc" class="visually-hidden" title="Range">We use the vehicle’s fuel tank capacity and the official EU combined fuel consumption data to calculate this value.</span>
+                                </a>
+                              </li>
+                              <li class="highlight">
+                                <div class="highlight__inner">
+                                  <span class="highlight__figure">4</span>
+                                  <span class="highlight__caption">Seats</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="description-box mt-5">
+                              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                  <li class="nav-item active">
+                                    <a class="nav-link" id="home-tab" data-toggle="tab" href="#descr" role="tab" aria-controls="home" aria-selected="true">Description</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active in" id="descr" role="tabpanel" aria-labelledby="home-tab">
+                                    <p>Hyundai Santro Zip Plus 2003 model with 1086 CC Engine M.P Beige in colour and a geniune run of 85600Kms in very good condition and fully insured is available for sale. Geniune buyers may contact.
+
+                                        I do not wish to be contacted by telemarketers or representatives of any other website.
+
+                                        Buyer's Guidelines:
+                                        - Chat and ask questions to be clear on the vehicle details
+                                        - While going for a physical vehicle inspection, please be aware of time and place of meeting
+                                        - Be careful when paying offline
+                                    - Do not deposit/transfer money to bank or any third party payment gateways without verifying the credentials</p>
+                                </div>
+                          </div>
+                      </div>
+                          </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="single-product-content">
+                           <form method="post" id="AddToCartForm" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data">
+                              <input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" />
+                              <div class="product-details">
+                                 <h1 class="single-product-name">Lorem Ipsum is simply dummy text</h1>
+                                 <!-- <div class="single-product-reviews">
+                                    <span class="shopify-product-reviews-badge" data-id="1912078270534"></span>
+                                    </div> -->
+                                 <!-- <div class="product-sku">SKU: <span class="variant-sku">YQT71020193</span></div>  -->
+                                 <div class="product-sku">
+                                    <hr>
+                                 </div>
+                                 <div class="single-product-price">
+                                    <div class="row">
+                                       <div class="col-md-6">
+                                          <div class="product-discount"><span  class="price" id="ProductPrice"><span class=money>$20.66</span></span></div>
+                                       </div>
+                                    </div>
+                                    <hr>
+                                 </div>
+                                 <div class="seller-sec">
+                                    <div class="row">
+                                       <div class="col-md-6">
+                                          <p><span class="fa fa-user">&nbsp;</span> Seller <sup>Offiline</sup></p>
+                                       </div>
+                                       <div class="col-md-6">
+                                          <div class="btn btn-default">
+                                             <i class="fas fa-share-alt"></i> &nbsp;  Share Now
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="btn-sec">
+                                    <div class="row">
+                                       <div class="col-md-12 p-2">
+                                        <button class="send-button-round"><span class="fa fa-user">&nbsp;</span> Send to a Freind</button>
+                                       </div>
+                                       <div class="col-md-4 p-2">
+                                        <button class="send-button-round"><span class="fa fa-heart fa-2x">&nbsp;</span></button>
+                                       </div>
+                                       <div class="col-md-4 p-2">
+                                        <button class="send-button-round"><span class="fa fa-print fa-2x">&nbsp;</span></button>
+                                       </div>
+                                       <div class="col-md-4 p-2">
+                                        <button class="send-button-round"><span class="fa fa-share-alt fa-2x">&nbsp;</span></button>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+
+
+               </div>
+            </div>
+         </div>
+      </main>
+      <section id="advertisement">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="main-heading text-center">
+                     <h2>Similar Items</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 content content1">
+                  <div class="row">
+                     <div class="col-md-3 col-sm-6 adp">
+                        <div class="ads">
+                           <a href="classified_vehicle_detail.html"><img src="images/vehicle-1.png"></a>
+                           <div class="ads-title">
+                              <p><a href="classified_vehicle_detail.html">Classic Red Bike</a></p>
+                              <hr class="m-0">
+                              <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6 adp">
+                        <div class="ads">
+                           <a href="classified_vehicle_detail.html"><img src="images/vehicle-2.png"></a>
+                           <div class="ads-title">
+                              <p><a href="classified_vehicle_detail.html">Classic Red Bike</a></p>
+                              <hr class="m-0">
+                              <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                           </div>
+                           <a href="classified_vehicle_detail.html" class="ads-hover">
+                           <span>$2,000</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6 adp">
+                        <div class="ads">
+                           <a href="classified_vehicle_detail.html"><img src="images/vehicle-3.png"></a>
+                           <div class="ads-title">
+                              <p><a href="classified_vehicle_detail.html">Classic Red Bike</a></p>
+                              <hr class="m-0">
+                              <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                           </div>
+                           <a href="classified_vehicle_detail.html" class="ads-hover">
+                           <span>$500</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6 adp">
+                        <div class="ads">
+                           <a href="classified_vehicle_detail.html"><img src="images/vehicle-4.png"></a>
+                           <div class="ads-title">
+                              <p><a href="classified_vehicle_detail.html">Classic Red Bike</a></p>
+                              <hr class="m-0">
+                              <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                           </div>
+                           <a href="classified_vehicle_detail.html" class="ads-hover">
+                           <span>$3,000</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--start Layer slider-->
+      <section class="vehicle-banner2">
+         <div class="banner-image">
+            <div class="container pt-5 pb-5">
+               <div class="row">
+                  <div class="col-md-4 col-md-offset-5 pl-2 ">
+                     <div class="slider-content slider-animated-1">
+                        <h2 class="animated banner-heading">GET YOUR DESIRED CAR</h2>
+                        <label class="animated pb-2">SET THE WHEELS OF YOURS</label>
+                        <label class="animated">DREAM CAR in motion</label>
+                        <a href="" class="btn btn-default">Read Now</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--Footer-->
+      <section id="footer">
+         <footer>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <div class="logo pb-2">
+                           <a href="#"><img src="images/logo.png" alt="classify"></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet sectetuer esl adipiscing elit sed diam nonummy nibhi euismod tincidunt ut <span class="col">laoreet dolore</span> amet magna aliquam erat volutpat. </p>
+                        <p>Ut wisi enim ad minim veniam quis dest nostrud exerci tation ullamcorper norme
+                           suscipit lobortis commodo consequat.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <h4>Information</h4>
+                        <ul>
+                           <li>
+                              <a href="#">Our Story</a>
+                           </li>
+                           <li>
+                              <a href="#">Privacy & Policy</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms & Conditions</a>
+                           </li>
+                           <li>
+                              <a href="#">Shipping & Delivery</a>
+                           </li>
+                           <li>
+                              <a href="#">Careers</a>
+                           </li>
+                           <li>
+                              <a href="#">FAQ</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <h4>Privacy Info</h4>
+                        <ul>
+                           <li>
+                              <a href="#">Privacy & Policy</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms of Sale</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms of Use</a>
+                           </li>
+                           <li>
+                              <a href="#">Report Abuse</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms of Use</a>
+                           </li>
+                           <li>
+                              <a href="#">CSR Policy</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <h4>Newsletter</h4>
+                        <p class="sign">Lorem ipsum dolor sit amet sectetuer in adipiscing elit sed diam...</p>
+                        <p class="sign">Sign up for the newsletter !</p>
+                        <form method="post">
+                           <input type="email" name="email" placeholder="Your email address...">
+                           <input type="submit" name="submit" value="sign-up">
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="copyright text-center">
+                        <p>@ All Copyrights Reseverd 2019 - Design & Development by <a class="col" href="http://joinwebs.com">Weblinerz</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+         </footer>
+      </section>
+      <!--End Footer-->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/owl.carousel.js"></script>
+      <script src="js/default.js"></script>
+      <script src="js/greensock.js"></script>
+      <script src="js/layersliderjquery.js"></script>
+      <script src="js/transition.js"></script>
+      <script>
+        (function(){
+
+          $("#cart").on("click", function() {
+            $(".shopping-cart").fadeToggle( "fast");
+        });
+
+      })();
+    </script>
+    <script>
+        (function($) {
+  "use strict"
+
+  // NAVIGATION
+  var responsiveNav = $('#responsive-nav'),
+    catToggle = $('#responsive-nav .category-nav .category-header'),
+    catList = $('#responsive-nav .category-nav .category-list'),
+    menuToggle = $('#responsive-nav .menu-nav .menu-header'),
+    menuList = $('#responsive-nav .menu-nav .menu-list');
+
+  catToggle.on('click', function() {
+    menuList.removeClass('open');
+    catList.toggleClass('open');
+  });
+
+  menuToggle.on('click', function() {
+    catList.removeClass('open');
+    menuList.toggleClass('open');
+  });
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest(responsiveNav).length) {
+      if (responsiveNav.hasClass('open')) {
+        responsiveNav.removeClass('open');
+        $('#navigation').removeClass('shadow');
+      } else {
+        if ($(event.target).closest('.nav-toggle > button').length) {
+          if (!menuList.hasClass('open') && !catList.hasClass('open')) {
+            menuList.addClass('open');
+          }
+          $('#navigation').addClass('shadow');
+          responsiveNav.addClass('open');
+        }
+      }
+    }
+  });
+
+})(jQuery);
+    </script>
+    <script>
+       var menu = document.querySelector('.menu')
+var menuPosition = menu.getBoundingClientRect().top;
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset >= menuPosition) {
+        menu.style.position = 'fixed';
+        menu.style.top = '0px';
+    } else {
+        menu.style.position = 'static';
+        menu.style.top = '';
+    }
+});
+     </script>
+     <script>
+       var menumobile = document.querySelector('.menu-mobile')
+var menumobilePosition = menumobile.getBoundingClientRect().top;
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset >= menumobilePosition) {
+        menumobile.style.position = 'fixed';
+        menumobile.style.top = '0px';
+    } else {
+        menumobile.style.position = 'static';
+        menumobile.style.top = '';
+    }
+});
+     </script>
+   </body>
+</html>

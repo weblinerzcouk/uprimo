@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+   <head lang="en">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Ad Details</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700,600,800,900,300' rel='stylesheet' type='text/css'>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+      <link rel="stylesheet" type="text/css" href="css/default.css">
+      <link rel="stylesheet" type="text/css" href="css/responsive.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+      <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+      <link rel="stylesheet" type="text/css" href="layerslider/layerslider.css">
+   </head>
+   <body>
+      <!--Start Header section-->
+      <section id="header">
+         <header>
+            <div class="top-bar">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-6 responsive-width-top">
+                        <div class="links">
+                           <a class="nav-toggle"><button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button></a>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 responsive-width-top">
+                        <div class="links text-right">
+                           <select class="select-language">
+                              <option>EN</option>
+                              <option>FR</option>
+                              <option>AR</option>
+                           </select>
+                           <a href="accounts/dashboard.blade.php">My Account</a> |
+                                <a href="accounts/login.blade.php">Login</a> |
+                                <a href="accounts/registration.blade.php">Register</a> |
+                                <a href="ads/post_ads.blade.php">Post a Ad</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--end top bar-->
+            <!--start menu-bar-->
+            <div class="menu">
+               <div class="menu-bar">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-sm-3">
+                           <div class="logo">
+                              <a href="#"><img src="images/logo.png" alt="classify"></a>
+                           </div>
+                        </div>
+                        <div class="col-sm-9">
+                           <div class="row navbar-search">
+                              <div class="col-sm-3 p-2 dropdown-search">
+                                 <select class="select">
+                                    <option>City</option>
+                                    <option>Casablanca</option>
+                                    <option>Fez</option>
+                                    <option>Tangier</option>
+                                    <option>Marrakesh</option>
+                                    <option>Salé</option>
+                                    <option>Meknes</option>
+                                    <option>Rabat</option>
+                                    <option>Kenitra</option>
+                                    <option>Tetouan</option>
+                                    <option>Beni Mellal</option>
+                                    <option>Safi</option>
+                                    <option>Oujda</option>
+                                    <option>Inezgane Ait Melloul</option>
+                                    <option>Agadir-Ida Ou Tanan</option>
+                                    <option>Nador</option>
+                                    <option>Khouribga</option>
+                                    <option>Settat</option>
+                                    <option>Skhirate-Temara</option>
+                                    <option>El Jadida</option>
+                                    <option>Khenifra</option>
+                                    <option>Taza</option>
+                                    <option>Mohammedia</option>
+                                    <option>Larache</option>
+                                    <option>Khemisset</option>
+                                    <option>Sidi Kacem</option>
+                                    <option>Azrou</option>
+                                    <option>Errachidia</option>
+                                    <option>Tarudant</option>
+                                    <option>El Kelaa Des Sraghna</option>
+                                    <option>Berkane</option>
+                                    <option>Ouarzazate</option>
+                                    <option>Taourirt</option>
+                                    <option>Al Hoceima</option>
+                                    <option>Essaouira</option>
+                                    <option>El Hajeb</option>
+                                    <option>Tiznit</option>
+                                    <option>Azilal</option>
+                                    <option>Ifrane</option>
+                                    <option>Mediouna</option>
+                                    <option>Benslimane</option>
+                                    <option>Taounate</option>
+                                    <option>Jerada</option>
+                                    <option>Sefrou</option>
+                                    <option>Figuig</option>
+                                    <option>Tan-Tan</option>
+                                    <option>Nouaceur</option>
+                                    <option>Ouezzane</option>
+                                    <option>Chefchaouen</option>
+                                    <option>Boulemane</option>
+                                    <option>Al Haouz</option>
+                                    <option>Chichaoua</option>
+                                    <option>Zagora</option>
+                                    <option>Chtouka Ait Baha</option>
+                                    <option>Mechra Bel Ksiri</option>
+                                    <option>Moulay Yacoub</option>
+                                 </select>
+                              </div>
+                              <div class="col-sm-3 p-2 dropdown-search">
+                                 <select class="select">
+                                    <option>All Categories</option>
+                                    <option>Cars &amp; Bikes</option>
+                                    <option>Mobiles &amp; Tablets</option>
+                                    <option>Electronics &amp; Appliances</option>
+                                    <option>Real Estate</option>
+                                    <option>Services</option>
+                                    <option>Jobs</option>
+                                    <option>Home &amp; Lifestyle</option>
+                                    <option>Education &amp; Training</option>
+                                    <option>Pets &amp; Pet Care</option>
+                                    <option>Entertainment</option>
+                                    <option>Community</option>
+                                    <option>Events</option>
+                                    <option>Matrimonial</option>
+                                 </select>
+                              </div>
+                              <div class="col-sm-6 p-2 search-box">
+                                 <input class="keyword" type="text" name="keyword" placeholder="Search here...">
+                                 <button class="btn"><i class="fa fa-search"></i></button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--end menu-bar-->
+            </div>
+         </header>
+      </section>
+      <!--End Header section-->
+      <main class="mt-5 mb-5">
+         <section class="section-padding no-top gray ">
+            <!-- Main Container -->
+            <div class="container">
+               <!-- Row -->
+               <div class="row">
+                  <div class="pricing-area">
+                     <div class="col-md-5 col-xs-12 col-sm-8">
+                        <div class="heading-zone">
+                           <h1>House Hold Good Moving Services</h1>
+                           <div class="short-history">
+                              <ul>
+                                 <li><b>June 20, 2017</b></li>
+                                 <li>Category: <b><a href="#">Services </a></b></li>
+                                 <li>Views: <b>666</b></li>
+                                 <li><a href="#">Edit</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-sm-4 detail_price col-xs-12">
+                        <div class="singleprice-tag heading-zone">
+                           <h1>$ 5,000</h1>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Middle Content Area -->
+                  <div class="col-md-8 col-xs-12 col-sm-12">
+                     <!-- Single Ad -->
+                     <div class="singlepage-detail">
+                        <div id="single-slider" class="flexslider">
+                           <ul class="slides">
+                              <li><a href="images/ssingle-service-1.jpg" data-fancybox="group"><img alt="" src="images/single-service-1.jpg" /></a></li>
+                           </ul>
+                        </div>
+                        <div id="carousel" class="flexslider">
+                           <ul class="slides">
+                              <li><img alt="" src="images/single-service-1.jpg"></li>
+                           </ul>
+                        </div>
+                        <div class="content-box-grid mt-5">
+                           <!-- Heading Area -->
+                           <div class="short-features">
+                              <!-- Heading Area -->
+                              <div class="heading-panel">
+                                 <h3 class="main-title text-left">
+                                    Description
+                                 </h3>
+                              </div>
+                              <p>
+                                 The safe and proper packaging of goods is of paramount importance to us. We, DTC packers and movers, details while packaging processes and to household goods moving services. Our personnel use premium quality packaging materials like wrapping papers, cartons, wooden boxes, etc., to maintain the safety of the goods. Our packaging personnel are professionally trained to handle all types of packaging needs, be it stationary or glass items. All the packing processes is done under the guidance and supervision of our packaging experts, who work tirelessly making sure that the goods are perfectly packed and don't get damaged during transportation.
+
+                              </p>
+                              <div class="col-sm-4 col-md-4 col-xs-12 no-padding">
+                                 <span><strong>Condition</strong> :</span> Used
+                              </div>
+                              <div class="col-sm-4 col-md-4 col-xs-12 no-padding">
+                                 <span><strong>Brand</strong> :</span> Nokia
+                              </div>
+                              <div class="col-sm-4 col-md-4 col-xs-12 no-padding">
+                                 <span><strong>Model</strong> :</span> Lumia 625
+                              </div>
+                              <div class="col-sm-4 col-md-4 col-xs-12 no-padding">
+                                 <span><strong>Product Type</strong>:</span> Mobile
+                              </div>
+                              <div class="col-sm-4 col-md-4 col-xs-12 no-padding">
+                                 <span><strong>Date</strong> :</span> 2014-10-06
+                              </div>
+                              <div class="col-sm-4 col-md-4 col-xs-12 no-padding">
+                                 <span><strong>Price</strong> :</span> Rs. 22,000
+                              </div>
+                           </div>
+                           <!-- Short Features  -->
+                           <div class="short-features">
+                              <!-- Ad Specifications -->
+
+                              <!-- Related Image  -->
+                              <div class="ad-related-img">
+                                 <img src="images/car-img1.png" alt="" class="img-responsive center-block">
+                              </div>
+                              <!-- Heading Area -->
+                              <div class="heading-panel">
+                                 <h3 class="main-title text-left">
+                                    Features
+                                 </h3>
+                              </div>
+                              <!-- Car Key Features  -->
+                              <ul class="car-feature-list ">
+                                 <li><i class="flaticon-light-bulb"></i> LOADING </li>
+                                 <li><i class="flaticon-rearview-mirror"></i> PACKING</li>
+                                 <li><i class="flaticon-car-steering-wheel"></i> RELOCATION</li>
+                                 <li><i class="flaticon-car-door"></i> UNLOADING</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <!-- Share Ad  -->
+                     </div>
+                     <!-- Single Ad End -->
+                  </div>
+                  <!-- Right Sidebar -->
+                  <div class="col-md-4 col-xs-12 col-sm-12 sticky-top-contact-card">
+                     <div class="author-card">
+                        <div class="author-img set-bg" data-setbg="img/author.jpg" style="background-image: url(images/author.jpg);"></div>
+                        <div class="author-info">
+                           <h5>Gina Wesley</h5>
+                           <p>Real Estate Agent</p>
+                        </div>
+                        <div class="author-contact">
+                           <p><i class="fa fa-phone"></i>(567) 666 121 2233</p>
+                           <p><i class="fa fa-envelope"></i>ginawesley26@gmail.com</p>
+                        </div>
+                     </div>
+                     <div class="contact-form-card">
+                        <h5>Do you have any question?</h5>
+                        <form>
+                           <input type="text" placeholder="Your name">
+                           <input type="text" placeholder="Your email">
+                           <textarea placeholder="Your question"></textarea>
+                           <button>SEND</button>
+                        </form>
+                     </div>
+                     <!-- Sidebar Widgets End -->
+                  </div>
+                  <!-- Middle Content Area  End -->
+               </div>
+               <!-- Row End -->
+            </div>
+            <!-- Main Container End -->
+         </section>
+      </main>
+      <section id="advertisement">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="main-heading text-center">
+                     <h2>Similar Items</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 content content1">
+                  <div class="row">
+                     <div class="col-md-3 col-sm-6 adp">
+                        <div class="ads">
+                           <a href="classified_services_detail.html"><img src="images/tour-package.jpeg"></a>
+                           <div class="ads-title">
+                              <p><a href="classified_services_detail.html">Classic Red Bike</a></p>
+                              <hr class="m-0">
+                              <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6 adp">
+                        <div class="ads">
+                           <a href="classified_services_detail.html"><img src="images/interior-design.jpeg"></a>
+                           <div class="ads-title">
+                              <p><a href="classified_services_detail.html">Classic Red Bike</a></p>
+                              <hr class="m-0">
+                              <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                           </div>
+                           <a href="classified_services_detail.html" class="ads-hover">
+                           <span>$2,000</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6 adp">
+                        <div class="ads">
+                           <a href="classified_services_detail.html"><img src="images/mover.jpeg"></a>
+                           <div class="ads-title">
+                              <p><a href="classified_services_detail.html">Classic Red Bike</a></p>
+                              <hr class="m-0">
+                              <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                           </div>
+                           <a href="classified_services_detail.html" class="ads-hover">
+                           <span>$500</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6 adp">
+                        <div class="ads">
+                           <a href="classified_services_detail.html"><img src="images/tour-package.jpeg"></a>
+                           <div class="ads-title">
+                              <p><a href="classified_services_detail.html">Classic Red Bike</a></p>
+                              <hr class="m-0">
+                              <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                           </div>
+                           <a href="classified_services_detail.html" class="ads-hover">
+                           <span>$3,000</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--start Layer slider-->
+
+      <!--Footer-->
+      <section id="footer">
+         <footer>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <div class="logo pb-2">
+                           <a href="#"><img src="images/logo.png" alt="classify"></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet sectetuer esl adipiscing elit sed diam nonummy nibhi euismod tincidunt ut <span class="col">laoreet dolore</span> amet magna aliquam erat volutpat. </p>
+                        <p>Ut wisi enim ad minim veniam quis dest nostrud exerci tation ullamcorper norme
+                           suscipit lobortis commodo consequat.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <h4>Information</h4>
+                        <ul>
+                           <li>
+                              <a href="#">Our Story</a>
+                           </li>
+                           <li>
+                              <a href="#">Privacy & Policy</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms & Conditions</a>
+                           </li>
+                           <li>
+                              <a href="#">Shipping & Delivery</a>
+                           </li>
+                           <li>
+                              <a href="#">Careers</a>
+                           </li>
+                           <li>
+                              <a href="#">FAQ</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <h4>Privacy Info</h4>
+                        <ul>
+                           <li>
+                              <a href="#">Privacy & Policy</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms of Sale</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms of Use</a>
+                           </li>
+                           <li>
+                              <a href="#">Report Abuse</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms of Use</a>
+                           </li>
+                           <li>
+                              <a href="#">CSR Policy</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <h4>Newsletter</h4>
+                        <p class="sign">Lorem ipsum dolor sit amet sectetuer in adipiscing elit sed diam...</p>
+                        <p class="sign">Sign up for the newsletter !</p>
+                        <form method="post">
+                           <input type="email" name="email" placeholder="Your email address...">
+                           <input type="submit" name="submit" value="sign-up">
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="copyright text-center">
+                        <p>@ All Copyrights Reseverd 2019 - Design & Development by <a class="col" href="">Weblinerz</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+         </footer>
+      </section>
+      <!--End Footer-->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/owl.carousel.js"></script>
+      <script src="js/slide.js"></script>
+      <script src="js/default.js"></script>
+      <script src="js/greensock.js"></script>
+      <script src="js/layersliderjquery.js"></script>
+      <script src="js/transition.js"></script>
+      <script>
+         (function(){
+
+           $("#cart").on("click", function() {
+             $(".shopping-cart").fadeToggle( "fast");
+           });
+
+         })();
+      </script>
+      <script>
+         (function($) {
+           "use strict"
+
+         // NAVIGATION
+         var responsiveNav = $('#responsive-nav'),
+         catToggle = $('#responsive-nav .category-nav .category-header'),
+         catList = $('#responsive-nav .category-nav .category-list'),
+         menuToggle = $('#responsive-nav .menu-nav .menu-header'),
+         menuList = $('#responsive-nav .menu-nav .menu-list');
+
+         catToggle.on('click', function() {
+           menuList.removeClass('open');
+           catList.toggleClass('open');
+         });
+
+         menuToggle.on('click', function() {
+           catList.removeClass('open');
+           menuList.toggleClass('open');
+         });
+
+         $(document).click(function(event) {
+           if (!$(event.target).closest(responsiveNav).length) {
+             if (responsiveNav.hasClass('open')) {
+               responsiveNav.removeClass('open');
+               $('#navigation').removeClass('shadow');
+             } else {
+               if ($(event.target).closest('.nav-toggle > button').length) {
+                 if (!menuList.hasClass('open') && !catList.hasClass('open')) {
+                   menuList.addClass('open');
+                 }
+                 $('#navigation').addClass('shadow');
+                 responsiveNav.addClass('open');
+               }
+             }
+           }
+         });
+
+         })(jQuery);
+      </script>
+      <script>
+         var menu = document.querySelector('.menu')
+         var menuPosition = menu.getBoundingClientRect().top;
+         window.addEventListener('scroll', function() {
+          if (window.pageYOffset >= menuPosition) {
+            menu.style.position = 'fixed';
+            menu.style.top = '0px';
+          } else {
+            menu.style.position = 'static';
+            menu.style.top = '';
+          }
+         });
+      </script>
+      <script>
+         var menumobile = document.querySelector('.menu-mobile')
+         var menumobilePosition = menumobile.getBoundingClientRect().top;
+         window.addEventListener('scroll', function() {
+          if (window.pageYOffset >= menumobilePosition) {
+            menumobile.style.position = 'fixed';
+            menumobile.style.top = '0px';
+          } else {
+            menumobile.style.position = 'static';
+            menumobile.style.top = '';
+          }
+         });
+      </script>
+   </body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
+    <title>Uprimo Admin</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <link href="css/dataTables.bootstrap4.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/responsive.dataTables.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header">
+    <!-- ============================================================== -->
+    <!-- Preloader -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Wrapper -->
+    <!-- ============================================================== -->
+    <div id="wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header">
+                <div class="top-left-part">
+                  <!-- Logo -->
+                  <a class="logo" href="dashboard.blade.php">
+                     <!-- Logo icon image, you can use font-icon also -->
+                     <b>
+                        <!--This is dark logo icon--><img src="plugins/images/admin-logo.png" alt="home" class="dark-logo" /><!--This is light logo icon--><img src="plugins/images/admin-logo.png" alt="home" class="light-logo resp-logo-display" />
+                        <img src="plugins/images/resp-logo.png" alt="home" class="light-logo resp-logo" style="width: 30px" />
+                     </b>
+                  </a>
+               </div>
+               <!-- /Logo -->
+               <ul class="nav navbar-top-links navbar-right">
+                  <li>
+                  <nav class="navbar navbar-expand-lg navbar-light navbar-sidebar">
+                     <button type="button" id="sidebarCollapse" class="btn btn-success">
+                     <span class="fa fa-bars"></span>
+                     </button>
+                  </nav>
+                  </li>
+               </ul>
+                <!-- /Logo -->
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li>
+                        <form role="search" class="app-search hidden-sm hidden-xs m-r-10">
+                            <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a> </form>
+                    </li>
+                    <li class="topbar">
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark pro-pic profile-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="plugins/images/users/varun.jpg" alt="user" class="img-circle" width="36">
+                            <span class="ml-2 user-text font-medium">Steve </span><span class="fa fa-angle-down ml-2 user-text"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
+                            <div class="d-flex no-block align-items-center p-3 mb-2 border-bottom">
+                                <div class=""><img src="plugins/images/users/varun.jpg" alt="user" class="rounded" width="80"></div>
+                                <div class="ml-2">
+                                    <h4 class="mb-0">Steave Jobs</h4>
+                                    <p class=" mb-0 text-muted fs-14">varun@gmail.com</p>
+                                    <a href="javascript:void(0)" class="btn btn-sm btn-danger text-white mt-2 btn-rounded">View Profile</a>
+                                </div>
+                            </div>
+                            <a class="dropdown-item"><i class="fa fa-user mr-1 ml-1"></i> My Profile</a>
+                            <a class="dropdown-item"><i class="fa fa-money mr-1 ml-1"></i> My Balance</a>
+                            <a class="dropdown-item"><i class="fa fa-envelope-o mr-1 ml-1"></i> Inbox</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"><i class="fa fa-cog mr-1 ml-1"></i> Account Setting</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"><i class="fa fa-power-off mr-1 ml-1"></i> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- End Top Navigation -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <nav id="sidebar" class="">
+            <div class="sidebar-nav slimscrollsidebar">
+               <div class="sidebar-head">
+                  <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">Dashboard</span></h3>
+               </div>
+               <ul class="nav" id="side-menu">
+                  <li class="sidebar-item">
+                     <a href="dashboard.blade.php" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Dashboard</a>
+                  </li>
+                  <li class="sidebar-item">
+                     <a href="javascript:void(0)" class="sidebar-link has-arrow waves-effect waves-dark" ><i class="fa fa-list-alt fa-fw" aria-hidden="true" ></i>Categories</a>
+                     <ul aria-expanded="false" class="collapse first-level">
+                        <li class="sidebar-item">
+                           <a href="sub-category.html" class="sidebar-link">
+                           <i class="mdi mdi-cards-variant"></i>
+                           <span class="hide-menu">Sub-categories</span>
+                           </a>
+                        </li>
+                        <li class="sidebar-item">
+                           <a href="cat-report.html" class="sidebar-link">
+                           <i class="mdi mdi-cart"></i>
+                           <span class="hide-menu">Analytic & Reports</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="sidebar-item">
+                     <a href="javascript:void(0)" class="sidebar-link has-arrow waves-effect waves-dark" ><i class="fa fa-server fa-fw" aria-hidden="true" ></i>Ads</a>
+                     <ul aria-expanded="false" class="collapse first-level">
+                        <li class="sidebar-item">
+                           <a href="ads/ad.blade.php" class="sidebar-link">
+                           <i class="mdi mdi-cards-variant"></i>
+                           <span class="hide-menu">Ads</span>
+                           </a>
+                        </li>
+                        <li class="sidebar-item">
+                           <a href="feat-ads.html" class="sidebar-link">
+                           <i class="mdi mdi-cart"></i>
+                           <span class="hide-menu">Featured Ads</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="sidebar-item">
+                     <a href="javascript:void(0)" class="sidebar-link has-arrow waves-effect waves-dark" ><i class="fa fa-user fa-fw" aria-hidden="true" ></i>Admin</a>
+                     <ul aria-expanded="false" class="collapse first-level">
+                        <li class="sidebar-item">
+                           <a href="sub-admin.html" class="sidebar-link">
+                           <i class="mdi mdi-cards-variant"></i>
+                           <span class="hide-menu">Sub-admins</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="sidebar-item">
+                     <a href="users.html" class="waves-effect"><i class="fa fa-users fa-fw" aria-hidden="true"></i>Users</a>
+                  </li>
+                  <li class="sidebar-item">
+                     <a href="memberships/index.blade.php" class="waves-effect"><i class="fa fa-university fa-fw" aria-hidden="true"></i>Membership Plan</a>
+                  </li>
+                  <li class="sidebar-item">
+                     <a href="profile.blade.php" class="waves-effect"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>Account Settings</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page Content -->
+        <!-- ============================================================== -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Featured Ads</h4> </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Dashboard</a></li>
+                            <li class="active">Featured Ads</li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /row -->
+                <div class="row">
+                  <div class="col-md-12 add-new-btn">
+                     <button type="button" class="btn btn-success pull-right" data-toggle="modal" data-target="#myModal">
+                     + Add New
+                     </button>
+                  </div>
+               </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="material-card card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="zero_config" class="table table-striped border white-box">
+                                        <thead>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Ad Title</th>
+                                                <th>Category</th>
+                                                <th>Condition</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>34423</td>
+                                                <td>Iphone X for sale</td>
+                                                <td>Electronics</td>
+                                                <td>Used</td>
+                                                <td>Active</td>
+                                                <td>
+                                                 <button class="btn btn-success" data-toggle="modal" data-target="#view">
+                                                    <span class="fa fa-eye"></span>
+                                                </button>
+                                                 <button class="btn btn-danger" data-toggle="modal" data-target="#">
+                                                    <span class="fa fa-trash"></span>
+                                                 </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>34423</td>
+                                                <td>Iphone X for sale</td>
+                                                <td>Electronics</td>
+                                                <td>Used</td>
+                                                <td>Active</td>
+                                                <td>
+                                                 <button class="btn btn-success" data-toggle="modal" data-target="#view">
+                                                    <span class="fa fa-eye"></span>
+                                                </button>
+                                                 <button class="btn btn-danger" data-toggle="modal" data-target="#">
+                                                    <span class="fa fa-trash"></span>
+                                                 </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>34423</td>
+                                                <td>Iphone X for sale</td>
+                                                <td>Electronics</td>
+                                                <td>Used</td>
+                                                <td>Active</td>
+                                                <td>
+                                                 <button class="btn btn-success" data-toggle="modal" data-target="#view">
+                                                    <span class="fa fa-eye"></span>
+                                                </button>
+                                                 <button class="btn btn-danger" data-toggle="modal" data-target="#">
+                                                    <span class="fa fa-trash"></span>
+                                                 </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>34423</td>
+                                                <td>Iphone X for sale</td>
+                                                <td>Electronics</td>
+                                                <td>Used</td>
+                                                <td>Active</td>
+                                                <td>
+                                                 <button class="btn btn-success" data-toggle="modal" data-target="#view">
+                                                    <span class="fa fa-eye"></span>
+                                                </button>
+                                                 <button class="btn btn-danger" data-toggle="modal" data-target="#">
+                                                    <span class="fa fa-trash"></span>
+                                                 </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>34423</td>
+                                                <td>Iphone X for sale</td>
+                                                <td>Electronics</td>
+                                                <td>Used</td>
+                                                <td>Active</td>
+                                                <td>
+                                                 <button class="btn btn-success" data-toggle="modal" data-target="#view">
+                                                    <span class="fa fa-eye"></span>
+                                                </button>
+                                                 <button class="btn btn-danger" data-toggle="modal" data-target="#">
+                                                    <span class="fa fa-trash"></span>
+                                                 </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>34423</td>
+                                                <td>Iphone X for sale</td>
+                                                <td>Electronics</td>
+                                                <td>Used</td>
+                                                <td>Active</td>
+                                                <td>
+                                                 <button class="btn btn-success" data-toggle="modal" data-target="#view">
+                                                    <span class="fa fa-eye"></span>
+                                                </button>
+                                                 <button class="btn btn-danger" data-toggle="modal" data-target="#">
+                                                    <span class="fa fa-trash"></span>
+                                                 </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>34423</td>
+                                                <td>Iphone X for sale</td>
+                                                <td>Electronics</td>
+                                                <td>Used</td>
+                                                <td>Active</td>
+                                                <td>
+                                                 <button class="btn btn-success" data-toggle="modal" data-target="#view">
+                                                    <span class="fa fa-eye"></span>
+                                                </button>
+                                                 <button class="btn btn-danger" data-toggle="modal" data-target="#">
+                                                    <span class="fa fa-trash"></span>
+                                                 </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>34423</td>
+                                                <td>Iphone X for sale</td>
+                                                <td>Electronics</td>
+                                                <td>Used</td>
+                                                <td>Active</td>
+                                                <td>
+                                                 <button class="btn btn-success" data-toggle="modal" data-target="#view">
+                                                    <span class="fa fa-eye"></span>
+                                                </button>
+                                                 <button class="btn btn-danger" data-toggle="modal" data-target="#">
+                                                    <span class="fa fa-trash"></span>
+                                                 </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Name</th>
+                                                <th>Category</th>
+                                                <th>Products</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> 2019 &copy; Uprimo Rights Reserved. </footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <div class="modal" id="myModal">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Add Featured Ad</h4>
+               </div>
+               <div class="modal-body">
+                  <div class="white-box p-2">
+                     <form class="form-horizontal form-material">
+                        <div class="form-group">
+                           <label class="col-md-12">ID</label>
+                           <div class="col-md-12">
+                              <input type="text" placeholder="23453" class="form-control form-control-line">
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label for="example-email" class="col-md-12">Name</label>
+                           <div class="col-md-12">
+                              <input type="text" placeholder="Tablet or Mobiles for sale" class="form-control form-control-line">
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-12">Category</label>
+                           <div class="col-md-12">
+                              <input type="text" value="" placeholder="Electronics" class="form-control form-control-line">
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-12">Condition</label>
+                           <div class="col-md-12">
+                              <input type="text" placeholder="New or Used" class="form-control form-control-line">
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-12">Description</label>
+                           <div class="col-md-12">
+                              <textarea rows="5" class="form-control form-control-line"></textarea>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-sm-12">Select Country</label>
+                           <div class="col-sm-12">
+                              <select class="form-control form-control-line">
+                                 <option>London</option>
+                                 <option>India</option>
+                                 <option>Usa</option>
+                                 <option>Canada</option>
+                                 <option>Thailand</option>
+                              </select>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                <button class="btn btn-success">Add Featured Ad</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.responsive.min.js"></script>
+    <script>
+        $('#zero_config').DataTable();
+    </script>
+    <script type="text/javascript">
+         $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+               $('#sidebar').toggleClass('active');
+            });
+         });
+      </script>
+</body>
+
+</html>

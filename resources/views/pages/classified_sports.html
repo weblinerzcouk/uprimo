@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Classified Sports</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700,600,800,900,300' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="layerslider/layerslider.css">
+    <style>
+    .img-responsive{
+        margin: 0 auto;
+    }
+    body{
+        background: #eee;
+    }
+    .searchbar {
+        position: relative;
+        margin-top: -70px;
+        z-index: 999;
+    }
+    </style>
+
+</head>
+<body>
+
+    <!--Start Header section-->
+    <section id="header">
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 responsive-width-top">
+
+                        </div>
+                        <div class="col-sm-6 responsive-width-top">
+                            <div class="links text-right">
+                                <select class="select-language">
+                                    <option>EN</option>
+                                    <option>FR</option>
+                                    <option>AR</option>
+                                </select>
+                                <a href="accounts/dashboard.blade.php">My Account</a> |
+                                <a href="accounts/login.blade.php">Login</a> |
+                                <a href="accounts/registration.blade.php">Register</a> |
+                                <a href="ads/post_ads.blade.php">Post a Ad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end top bar-->
+
+            <!--start menu-bar-->
+            <div class="menu">
+                <div class="menu-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="classify"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row navbar-search">
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>City</option>
+                                        <option>Casablanca</option>
+                                        <option>Fez</option>
+                                        <option>Tangier</option>
+                                        <option>Marrakesh</option>
+                                        <option>Salé</option>
+                                        <option>Meknes</option>
+                                        <option>Rabat</option>
+                                        <option>Kenitra</option>
+                                        <option>Tetouan</option>
+                                        <option>Beni Mellal</option>
+                                        <option>Safi</option>
+                                        <option>Oujda</option>
+                                        <option>Inezgane Ait Melloul</option>
+                                        <option>Agadir-Ida Ou Tanan</option>
+                                        <option>Nador</option>
+                                        <option>Khouribga</option>
+                                        <option>Settat</option>
+                                        <option>Skhirate-Temara</option>
+                                        <option>El Jadida</option>
+                                        <option>Khenifra</option>
+                                        <option>Taza</option>
+                                        <option>Mohammedia</option>
+                                        <option>Larache</option>
+                                        <option>Khemisset</option>
+                                        <option>Sidi Kacem</option>
+                                        <option>Azrou</option>
+                                        <option>Errachidia</option>
+                                        <option>Tarudant</option>
+                                        <option>El Kelaa Des Sraghna</option>
+                                        <option>Berkane</option>
+                                        <option>Ouarzazate</option>
+                                        <option>Taourirt</option>
+                                        <option>Al Hoceima</option>
+                                        <option>Essaouira</option>
+                                        <option>El Hajeb</option>
+                                        <option>Tiznit</option>
+                                        <option>Azilal</option>
+                                        <option>Ifrane</option>
+                                        <option>Mediouna</option>
+                                        <option>Benslimane</option>
+                                        <option>Taounate</option>
+                                        <option>Jerada</option>
+                                        <option>Sefrou</option>
+                                        <option>Figuig</option>
+                                        <option>Tan-Tan</option>
+                                        <option>Nouaceur</option>
+                                        <option>Ouezzane</option>
+                                        <option>Chefchaouen</option>
+                                        <option>Boulemane</option>
+                                        <option>Al Haouz</option>
+                                        <option>Chichaoua</option>
+                                        <option>Zagora</option>
+                                        <option>Chtouka Ait Baha</option>
+                                        <option>Mechra Bel Ksiri</option>
+                                        <option>Moulay Yacoub</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>All Categories</option>
+
+                                        <option>Cars &amp; Bikes</option>
+                                        <option>Mobiles &amp; Tablets</option>
+                                        <option>Electronics &amp; Appliances</option>
+                                        <option>Real Estate</option>
+                                        <option>Services</option>
+                                        <option>Jobs</option>
+                                        <option>Home &amp; Lifestyle</option>
+                                        <option>Education &amp; Training</option>
+                                        <option>Pets &amp; Pet Care</option>
+                                        <option>Entertainment</option>
+                                        <option>Community</option>
+                                        <option>Events</option>
+                                        <option>Matrimonial</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 p-2 search-box">
+                                    <input class="keyword" type="text" name="keyword" placeholder="Search here...">
+                                    <button class="btn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end menu-bar-->
+            </div>
+        </header>
+    </section><!--End Header section-->
+
+    <!--start Layer slider-->
+    <section>
+        <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+            <div class="carousel-inner">
+                <div class="item slides active">
+                  <div class="slide-1" style="background-image: url(images/slider/sports-bg.jpg);"></div>
+                  <div class="hero">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-5 p-5">
+                                <hgroup>
+                                    <h4>Find Your Perfect Equipment</h4>
+                                    <h3>Sale For A Week</h3>
+                                </hgroup>
+                                <button class="btn btn-hero btn-lg" role="button">Visit Us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Category-->
+    <section id="pet-acc" class="pb-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main-heading text-center">
+                        <h2>Buy Sports Equipment</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5 pb-5">
+                <div class="col-md-4 mb-3">
+                    <div class="f_add_item right_dir pet-acc-food">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="f_add_hover p-2">
+                                    <h4 class="pl-3">Cricket</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 pt-5 text-center">
+                                <a class="add_btn pull-left pl-3" href="#">Shop Now <i class="arrow_right"></i></a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="f_add_img pull-right"><img class="img-fluid p-0" src="images/sports_eqip-5.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="f_add_item right_dir pet-acc-food">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="f_add_hover p-2">
+                                    <h4 class="pl-3">Table Tennis</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 pt-5 text-center">
+                                <a class="add_btn pull-left pl-3" href="#">Shop Now <i class="arrow_right"></i></a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="f_add_img pull-right"><img class="img-fluid p-0" src="images/sports_eqip-2.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  mb-3">
+                    <div class="f_add_item right_dir pet-acc-food">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="f_add_hover p-2">
+                                    <h4 class="pl-3">Swimming</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 pt-5 text-center">
+                                <a class="add_btn pull-left pl-3" href="#">Shop Now <i class="arrow_right"></i></a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="f_add_img pull-right"><img class="img-fluid p-0" src="images/sports_eqip-3.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="f_add_item right_dir pet-acc-food bg-theme">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="f_add_hover p-2">
+                                    <h4 class="pl-3">Cycling</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 pt-5 text-center">
+                                <a class="add_btn pull-left pl-3" href="#">Shop Now <i class="arrow_right"></i></a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="f_add_img pull-right"><img class="img-fluid p-0" src="images/sports_eqip-4.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="f_add_item right_dir pet-acc-food">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="f_add_hover p-2">
+                                    <h4 class="pl-3">Volleyball</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 pt-5 text-center">
+                                <a class="add_btn pull-left pl-3" href="#">Shop Now <i class="arrow_right"></i></a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="f_add_img pull-right"><img class="img-fluid p-0" src="images/sports_eqip-5.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="f_add_item right_dir pet-acc-food">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="f_add_hover p-2">
+                                    <h4 class="pl-3">Snooker</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 pt-5 text-center">
+                                <a class="add_btn pull-left pl-3" href="#">Shop Now <i class="arrow_right"></i></a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="f_add_img pull-right"><img class="img-fluid p-0" src="images/sports_eqip-6.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--End Category-->
+
+    <section class="sports-banner">
+        <div class="banner-image">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center pt-5">
+                      <div class="slider-content slider-animated-1">
+                       <h2 class="animated banner-heading">Runway #2019</h2>
+                       <h1 class="animated">Get Up Your Garage For Seasonal Sports</h1>
+                       <a href="" class="btn btn-default">Shop Now</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Classify Advertisement-->
+    <section id="advertisement" class="bg-white pt-5 mb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main-heading text-center">
+                        <h2>Shop By Category<br><label>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</label></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <ul class="nav nav-pills">
+                      <li class="nav-item active">
+                        <a class="nav-link" data-toggle="pill" href="#home">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#menu1">Cricket</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#menu2">Table Tennis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#menu2">Snooker</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="ads-title">
+        <div class="container-fluid bg-grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-5 pr-0">
+                        <h4>All Equipments</h4>
+
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <label>Sort by</label>
+                        <select class="select">
+                            <option>Sort By</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <label>Show</label>
+                        <select class="show-listing">
+                            <option>Show</option>
+                        </select>
+                    </div>
+                    <div class="col-md-1 col-sm-2 change-view">
+                        <a href="" class="change-view-btn active-view-btn"><i class="fa fa-th-list "></i></a>
+                        <a href="" class="change-view-btn"><i class="fa fa-th-large"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container">
+        <div class="tab-content mt-5">
+          <div class="tab-pane container active" id="home">
+              <div class="row">
+                <div class="col-md-12 content content1 mb-2">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 adp">
+                            <div class="ads">
+                                <a href="#"><img src="images/sports_cat-1.png"></a>
+                                <div class="ads-title">
+                                    <p><a href="#">Classic Red Bike</a></p>
+                                    <hr class="m-0">
+                                    <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 adp">
+                            <div class="ads">
+                                <a href="#"><img src="images/sports_cat-2.png"></a>
+                                <div class="ads-title">
+                                    <p><a href="#">Classic Red Bike</a></p>
+                                    <hr class="m-0">
+                                    <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                                </div>
+                                <a href="#" class="ads-hover">
+                                    <span>$2,000</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 adp">
+                            <div class="ads">
+                                <a href="#"><img src="images/sports_cat-3.png"></a>
+                                <div class="ads-title">
+                                    <p><a href="#">Classic Red Bike</a></p>
+                                    <hr class="m-0">
+                                    <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                                </div>
+                                <a href="#" class="ads-hover">
+                                    <span>$500</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 adp">
+                            <div class="ads">
+                                <a href="#"><img src="images/sports_cat-4.png"></a>
+                                <div class="ads-title">
+                                    <p><a href="#">Classic Red Bike</a></p>
+                                    <hr class="m-0">
+                                    <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                                </div>
+                                <a href="#" class="ads-hover">
+                                    <span>$3,000</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 adp">
+                            <div class="ads">
+                                <a href="#"><img src="images/sports_cat-1.png"></a>
+                                <div class="ads-title">
+                                    <p><a href="#">Classic Red Bike</a></p>
+                                    <hr class="m-0">
+                                    <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 adp">
+                            <div class="ads">
+                                <a href="#"><img src="images/sports_cat-2.png"></a>
+                                <div class="ads-title">
+                                    <p><a href="#">Classic Red Bike</a></p>
+                                    <hr class="m-0">
+                                    <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                                </div>
+                                <a href="#" class="ads-hover">
+                                    <span>$2,000</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 adp">
+                            <div class="ads">
+                                <a href="#"><img src="images/sports_cat-3.png"></a>
+                                <div class="ads-title">
+                                    <p><a href="#">Classic Red Bike</a></p>
+                                    <hr class="m-0">
+                                    <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                                </div>
+                                <a href="#" class="ads-hover">
+                                    <span>$500</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 adp">
+                            <div class="ads">
+                                <a href="#"><img src="images/sports_cat-4.png"></a>
+                                <div class="ads-title">
+                                    <p><a href="#">Classic Red Bike</a></p>
+                                    <hr class="m-0">
+                                    <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                                </div>
+                                <a href="#" class="ads-hover">
+                                    <span>$3,000</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-offset-4 text-center">
+                            <button class="btn btn-green">See all ads</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="menu1">
+
+          </div>
+          <div class="tab-pane container fade" id="menu2">
+
+          </div>
+        </div>
+
+        </div>
+    </section><!--end advertisement-->
+
+    <section id="detail" class="bg-white p-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main-heading text-center">
+                        <h2>From The Blog</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-12">
+                    <div class="page-content mt-5 mb-5">
+
+                        <!--Content area-->
+                        <article class="blog_post col-xs-12 col-sm-4 pb-5 wow fadeIn  slick-slide slick-current slick-active" data-wow-delay="100ms" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00">
+                            <div class="blog_post_content">
+
+
+                                <div class="blog_post_content_top">
+
+                                    <div class="post_thumbnail horsewayMedia-body">
+                                        <a class="thumbnail1" href="#" tabindex="0">
+                                            <img class="xipblog_img img-responsive" src="images/sports-blog-1.png" alt="This is Secound Post For XipBlog">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="blog_post_content_bottom">
+
+                                    <p class="meta_date">
+                                        <span><i class="fa fa-calendar"></i> December 17 2018</span>
+
+                                    </p>
+
+                                    <h4 class="post_title">
+                                        <a href="#" tabindex="0">Sample Blog Title</a>
+                                    </h4>
+
+
+                                    <div class="post_content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the ...</p>
+                                    </div>
+                                    <div class="content_more">
+                                        <a class="read_more text-btn" href="" tabindex="0">Read more <i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                        <article class="blog_post col-xs-12 col-sm-4 pb-5 wow fadeIn  slick-slide slick-current slick-active" data-wow-delay="100ms" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00">
+                            <div class="blog_post_content">
+
+
+                                <div class="blog_post_content_top">
+
+                                    <div class="post_thumbnail horsewayMedia-body">
+                                        <a class="thumbnail1" href="#" tabindex="0">
+                                            <img class="xipblog_img img-responsive" src="images/sports-blog-2.png" alt="This is Secound Post For XipBlog">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="blog_post_content_bottom">
+
+                                    <p class="meta_date">
+                                        <span><i class="fa fa-calendar"></i> December 17 2018</span>
+
+                                    </p>
+
+                                    <h4 class="post_title">
+                                        <a href="#" tabindex="0">Sample Blog Title</a>
+                                    </h4>
+
+
+                                    <div class="post_content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the ...</p>
+                                    </div>
+                                    <div class="content_more">
+                                        <a class="read_more text-btn" href="" tabindex="0">Read more <i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                        <article class="blog_post col-xs-12 col-sm-4 pb-5 wow fadeIn  slick-slide slick-current slick-active" data-wow-delay="100ms" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00">
+                            <div class="blog_post_content">
+
+
+                                <div class="blog_post_content_top">
+
+                                    <div class="post_thumbnail horsewayMedia-body">
+                                        <a class="thumbnail1" href="#" tabindex="0">
+                                            <img class="xipblog_img img-responsive" src="images/sports-blog-3.png" alt="This is Secound Post For XipBlog">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="blog_post_content_bottom">
+
+                                    <p class="meta_date">
+                                        <span><i class="fa fa-calendar"></i> December 17 2018</span>
+
+                                    </p>
+
+                                    <h4 class="post_title">
+                                        <a href="#" tabindex="0">Sample Blog Title</a>
+                                    </h4>
+
+
+                                    <div class="post_content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the ...</p>
+                                    </div>
+                                    <div class="content_more">
+                                        <a class="read_more text-btn" href="" tabindex="0">Read more <i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <a href="" class="btn btn-default">SHOW MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sports-banner2">
+        <div class="banner-image">
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section id="footer">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <div class="logo pb-2">
+                                <a href="#"><img src="images/logo.png" alt="classify"></a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet sectetuer esl adipiscing elit sed diam nonummy nibhi euismod tincidunt ut <span class="col">laoreet dolore</span> amet magna aliquam erat volutpat. </p>
+                            <p>Ut wisi enim ad minim veniam quis dest nostrud exerci tation ullamcorper norme
+                                suscipit lobortis commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h4>Information</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Our Story</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy & Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shipping & Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h4>Privacy Info</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Privacy & Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of Sale</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report Abuse</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#">CSR Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h4>Newsletter</h4>
+                            <p class="sign">Lorem ipsum dolor sit amet sectetuer in adipiscing elit sed diam...</p>
+                            <p class="sign">Sign up for the newsletter !</p>
+                            <form method="post">
+                                <input type="email" name="email" placeholder="Your email address...">
+                                <input type="submit" name="submit" value="sign-up">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright text-center">
+                            <p>@ All Copyrights Reseverd 2019 - Design & Development by <a class="col" href="http://joinwebs.com">Weblinerz</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+        </footer>
+    </section>
+    <!--End Footer-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/default.js"></script>
+    <script src="js/greensock.js"></script>
+    <script src="js/layersliderjquery.js"></script>
+    <script src="js/transition.js"></script>
+    <script>
+        (function(){
+
+          $("#cart").on("click", function() {
+            $(".shopping-cart").fadeToggle( "fast");
+        });
+
+      })();
+    </script>
+    <script>
+        (function($) {
+  "use strict"
+
+  // NAVIGATION
+  var responsiveNav = $('#responsive-nav'),
+    catToggle = $('#responsive-nav .category-nav .category-header'),
+    catList = $('#responsive-nav .category-nav .category-list'),
+    menuToggle = $('#responsive-nav .menu-nav .menu-header'),
+    menuList = $('#responsive-nav .menu-nav .menu-list');
+
+  catToggle.on('click', function() {
+    menuList.removeClass('open');
+    catList.toggleClass('open');
+  });
+
+  menuToggle.on('click', function() {
+    catList.removeClass('open');
+    menuList.toggleClass('open');
+  });
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest(responsiveNav).length) {
+      if (responsiveNav.hasClass('open')) {
+        responsiveNav.removeClass('open');
+        $('#navigation').removeClass('shadow');
+      } else {
+        if ($(event.target).closest('.nav-toggle > button').length) {
+          if (!menuList.hasClass('open') && !catList.hasClass('open')) {
+            menuList.addClass('open');
+          }
+          $('#navigation').addClass('shadow');
+          responsiveNav.addClass('open');
+        }
+      }
+    }
+  });
+
+})(jQuery);
+    </script>
+
+</body>
+</html>

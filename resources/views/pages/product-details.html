@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+   <head lang="en">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Single Product</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700,600,800,900,300' rel='stylesheet' type='text/css'>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+      <link rel="stylesheet" type="text/css" href="css/default.css">
+      <link rel="stylesheet" type="text/css" href="css/responsive.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+      <link rel="stylesheet" type="text/css" href="layerslider/layerslider.css">
+      <link href="http://cdn.shopify.com/s/files/1/0067/5617/1846/t/2/assets/timber.scss.css" rel="stylesheet" type="text/css" media="all" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </head>
+   <body>
+      <!--Start Header section-->
+      <section id="header">
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 responsive-width-top">
+
+                        </div>
+                        <div class="col-sm-6 responsive-width-top">
+                            <div class="links text-right">
+                                <select class="select-language">
+                                    <option>EN</option>
+                                    <option>FR</option>
+                                    <option>AR</option>
+                                </select>
+                                <a href="accounts/dashboard.blade.php">My Account</a> |
+                                <a href="accounts/login.blade.php">Login</a> |
+                                <a href="accounts/registration.blade.php">Register</a> |
+                                <a href="ads/post_ads.blade.php">Post a Ad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end top bar-->
+
+            <!--start menu-bar-->
+            <div class="menu">
+                <div class="menu-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="classify"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row navbar-search">
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>City</option>
+                                        <option>Casablanca</option>
+                                        <option>Fez</option>
+                                        <option>Tangier</option>
+                                        <option>Marrakesh</option>
+                                        <option>Salé</option>
+                                        <option>Meknes</option>
+                                        <option>Rabat</option>
+                                        <option>Kenitra</option>
+                                        <option>Tetouan</option>
+                                        <option>Beni Mellal</option>
+                                        <option>Safi</option>
+                                        <option>Oujda</option>
+                                        <option>Inezgane Ait Melloul</option>
+                                        <option>Agadir-Ida Ou Tanan</option>
+                                        <option>Nador</option>
+                                        <option>Khouribga</option>
+                                        <option>Settat</option>
+                                        <option>Skhirate-Temara</option>
+                                        <option>El Jadida</option>
+                                        <option>Khenifra</option>
+                                        <option>Taza</option>
+                                        <option>Mohammedia</option>
+                                        <option>Larache</option>
+                                        <option>Khemisset</option>
+                                        <option>Sidi Kacem</option>
+                                        <option>Azrou</option>
+                                        <option>Errachidia</option>
+                                        <option>Tarudant</option>
+                                        <option>El Kelaa Des Sraghna</option>
+                                        <option>Berkane</option>
+                                        <option>Ouarzazate</option>
+                                        <option>Taourirt</option>
+                                        <option>Al Hoceima</option>
+                                        <option>Essaouira</option>
+                                        <option>El Hajeb</option>
+                                        <option>Tiznit</option>
+                                        <option>Azilal</option>
+                                        <option>Ifrane</option>
+                                        <option>Mediouna</option>
+                                        <option>Benslimane</option>
+                                        <option>Taounate</option>
+                                        <option>Jerada</option>
+                                        <option>Sefrou</option>
+                                        <option>Figuig</option>
+                                        <option>Tan-Tan</option>
+                                        <option>Nouaceur</option>
+                                        <option>Ouezzane</option>
+                                        <option>Chefchaouen</option>
+                                        <option>Boulemane</option>
+                                        <option>Al Haouz</option>
+                                        <option>Chichaoua</option>
+                                        <option>Zagora</option>
+                                        <option>Chtouka Ait Baha</option>
+                                        <option>Mechra Bel Ksiri</option>
+                                        <option>Moulay Yacoub</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>All Categories</option>
+
+                                        <option>Cars &amp; Bikes</option>
+                                        <option>Mobiles &amp; Tablets</option>
+                                        <option>Electronics &amp; Appliances</option>
+                                        <option>Real Estate</option>
+                                        <option>Services</option>
+                                        <option>Jobs</option>
+                                        <option>Home &amp; Lifestyle</option>
+                                        <option>Education &amp; Training</option>
+                                        <option>Pets &amp; Pet Care</option>
+                                        <option>Entertainment</option>
+                                        <option>Community</option>
+                                        <option>Events</option>
+                                        <option>Matrimonial</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 p-2 search-box">
+                                    <input class="keyword" type="text" name="keyword" placeholder="Search here...">
+                                    <button class="btn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end menu-bar-->
+            </div>
+        </header>
+    </section>
+      <!--End Header section-->
+      <main>
+         <div id="shopify-section-product-template" class="shopify-section">
+            <div class="single-product-area mt-80 mb-80">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-5">
+                        <div class="product-details-large" id="ProductPhoto">
+                           <img id="ProductPhotoImg" class="product-zoom" data-image-id="" alt="Product" data-zoom-image="images/single-product.png" src="images/single-product.png">
+                        </div>
+                        <div id="ProductThumbs" class="product-thumbnail owl-carousel">
+                           <a class="product-single__thumbnail " href="images/single-product3.png"
+                              data-image="images/single-product3.png" data-zoom-image="images/single-product3.png">
+                           <img src="images/single-product3.png" alt="12. Aliexpress dropshipping by oberlo"></a>
+
+                           <a class="product-single__thumbnail " href="images/single-product1.png"
+                              data-image="images/single-product1.png" data-zoom-image="images/single-product1.png">
+                           <img src="images/single-product1.png" alt="Product"></a>
+
+                           <a class="product-single__thumbnail " href="images/single-product2.png"
+                              data-image="images/single-product2.png" data-zoom-image="images/single-product2.png">
+                           <img src="images/single-product2.png" alt="Product"></a>
+
+                           <a class="product-single__thumbnail " href="images/single-product3.png"
+                              data-image="images/single-product3.png" data-zoom-image="images/single-product3.png">
+                           <img src="images/single-product3.png" alt="12. Aliexpress dropshipping by oberlo"></a>
+                        </div>
+                     </div>
+                     <div class="col-md-7">
+                        <div class="single-product-content">
+                           <form method="post" id="AddToCartForm" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data">
+                              <input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" />
+                              <div class="product-details">
+                                 <h1 class="single-product-name">Lorem Ipsum is simply dummy text</h1>
+                                 <!-- <div class="single-product-reviews">
+                                    <span class="shopify-product-reviews-badge" data-id="1912078270534"></span>
+                                    </div> -->
+                                 <!-- <div class="product-sku">SKU: <span class="variant-sku">YQT71020193</span></div>  -->
+                                 <div class="product-sku">
+                                    <hr>
+                                 </div>
+                                 <div class="single-product-price">
+                                    <div class="row">
+                                       <div class="col-md-6">
+                                          <div class="product-discount"><span  class="price" id="ProductPrice"><span class=money>$20.66</span></span></div>
+                                       </div>
+                                    </div>
+                                    <hr>
+                                 </div>
+                                 <div class="seller-sec">
+                                    <div class="row">
+                                       <div class="col-md-6">
+                                          <p><span class="fa fa-user">&nbsp;</span> Seller <sup>Offiline</sup></p>
+                                       </div>
+                                       <div class="col-md-6">
+                                          <div class="btn btn-default">
+                                             <i class="fas fa-share-alt"></i> &nbsp;  Share Now
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="btn-sec">
+                                    <div class="row">
+                                       <div class="col-md-6">
+                                       </div>
+                                       <div class="col-md-6">
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                    <div id="accordion" class="single_product_desc" role="tablist">
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingOne">
+                                        <h6 class="mb-0">
+                                            <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">Details</a>
+                                        </h6>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show in" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                        <div class="card-body">
+                                            <!-- <div class="single-product-action"> -->
+                                    <!-- <div class="product-variant-option">
+                                       <select name="id" id="productSelect" class="product-single__variants" style="display:none;">
+                                          <option  selected="selected"  data-sku="YQT71020193" value="19506517377094">Default Title - <span class=money>$20.66 USD</span></option>
+                                       </select>
+                                       <script>
+                                          jQuery(function() {
+                                            jQuery('.swatch :radio').change(function() {
+                                              var optionIndex = jQuery(this).closest('.swatch').attr('data-option-index');
+                                              var optionValue = jQuery(this).val();
+                                              jQuery(this)
+                                              .closest('form')
+                                              .find('.single-option-selector')
+                                              .eq(optionIndex)
+                                              .val(optionValue)
+                                              .trigger('change');
+                                            });
+                                          });
+                                       </script>
+                                    </div> -->
+                                    <!-- <style>.product-variant-option .selector-wrapper{display: none;}</style> -->
+                                    <!-- <div class="product-add-to-cart">
+                                       <span class="control-label">Quantity</span>
+                                       <div class="cart-plus-minus">
+                                          <input class="cart-plus-minus-box" type="text" name="quantity" value="1">
+                                       </div>
+                                       <div class="add">
+                                          <button type="submit" class="add-to-cart ajax-spin-cart" id="AddToCart">
+                                          <i class="ion-bag"></i>
+                                          <span class="list-cart-title cart-title" id="AddToCartText">Add to cart</span>
+                                          </button>
+                                          <script>
+                                             jQuery('#AddToCart').click(function(e) {
+                                             e.preventDefault();
+                                             Shopify.addItemFromFormStart('AddToCartForm', 1912078270534);
+                                              });
+                                          </script>
+                                          <div class="single-product-wishlist">
+                                             <a class="add-to-cart action-wishlist wishlist" href="#" title="Wishlist"><i class="fa fa-heart"></i></a>
+                                          </div>
+                                       </div>
+                                    </div> -->
+                                <!-- </div> -->
+                                            <div class="product-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingTwo">
+                                        <h6 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Design & Dimensions</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" style="">
+                                        <div class="card-body">
+                                            <div class="product-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingThree">
+                                        <h6 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Power & Performance</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" style="">
+                                        <div class="card-body">
+                                            <div class="product-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingThree">
+                                        <h6 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">Comfort & Convenience</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapsefour" class="collapse" role="tabpanel" aria-labelledby="headingfour" data-parent="#accordion" style="">
+                                        <div class="card-body">
+                                            <div class="product-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingThree">
+                                        <h6 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapsefive" aria-expanded="false" aria-controls="collapsefive">Description</a>
+                                        </h6>
+                                    </div>
+                                    <div id="collapsefive" class="collapse" role="tabpanel" aria-labelledby="headingfive" data-parent="#accordion" style="">
+                                        <div class="card-body">
+                                            <div class="product-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <style type="text/css">.product-details .countdown-timer-wrapper{display: none !important;}</style>
+            <script>$(document).ready(function() {$('.fancybox').fancybox();});</script>
+            <script>function productZoom(){
+               $(".product-zoom").elevateZoom({
+                 gallery: 'ProductThumbs',
+                 galleryActiveClass: "active",
+                 zoomType: "inner",
+                 cursor: "crosshair"
+               });$(".product-zoom").on("click", function(e) {
+                 var ez = $('.product-zoom').data('elevateZoom');
+                 $.fancybox(ez.getGalleryList());
+                 return false;
+               });
+
+               };
+               function productZoomDisable(){
+               if( $(window).width() < 767 ) {
+                 $('.zoomContainer').remove();
+                 $(".product-zoom").removeData('elevateZoom');
+                 $(".product-zoom").removeData('zoomImage');
+               } else {
+                 productZoom();
+               }
+               };
+
+               productZoomDisable();
+
+               $(window).resize(function() {
+               productZoomDisable();
+               });
+            </script>
+            <script>
+               $('.product-thumbnail').owlCarousel({
+                   loop: true,
+                   center: true,
+                   nav: true,dots:false,
+                   margin:10,
+                   autoplay: false,
+                   autoplayTimeout: 5000,
+                   navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                   item: 3,
+                   responsive: {
+                       0: {
+                           items: 2
+                       },
+                       480: {
+                           items: 3
+                       },
+                       992: {
+                           items: 3,
+                       },
+                       1170: {
+                           items: 3,
+                       },
+                       1200: {
+                           items: 3
+                       }
+                   }
+               });
+            </script>
+         </div>
+      </main>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-sm-12">
+               <div class="main-heading text-center">
+                  <h2>Location</h2>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12" style="padding: 0">
+               <div id="googleMap" style="width:100%;height:400px;"></div>
+               <script>
+                  function myMap() {
+                      var mapProp= {
+                        center:new google.maps.LatLng(51.508742,-0.120850),
+                        zoom:5,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                  }
+               </script>
+               <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+            </div>
+         </div>
+      </div>
+      <section id="advertisement">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="main-heading text-center">
+                     <h2>Similar Items</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 content content1">
+                  <div class="row">
+                     <div class="col-md-3 col-sm-6 adp">
+                        <div class="ads">
+                           <a href="product-details.html"><img src="images/vehicle-1.png"></a>
+                           <div class="ads-title">
+                              <p><a href="product-details.html">Classic Red Bike</a></p>
+                              <hr class="m-0">
+                              <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6 adp">
+                        <div class="ads">
+                           <a href="product-details.html"><img src="images/vehicle-2.png"></a>
+                           <div class="ads-title">
+                              <p><a href="product-details.html">Classic Red Bike</a></p>
+                              <hr class="m-0">
+                              <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                           </div>
+                           <a href="product-details.html" class="ads-hover">
+                           <span>$2,000</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6 adp">
+                        <div class="ads">
+                           <a href="product-details.html"><img src="images/vehicle-3.png"></a>
+                           <div class="ads-title">
+                              <p><a href="product-details.html">Classic Red Bike</a></p>
+                              <hr class="m-0">
+                              <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                           </div>
+                           <a href="product-details.html" class="ads-hover">
+                           <span>$500</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-md-3 col-sm-6 adp">
+                        <div class="ads">
+                           <a href="product-details.html"><img src="images/vehicle-4.png"></a>
+                           <div class="ads-title">
+                              <p><a href="product-details.html">Classic Red Bike</a></p>
+                              <hr class="m-0">
+                              <p class="p-3"><span class="price">£450.99</span> <button class="btn btn-default">Contact Seller</button></p>
+                           </div>
+                           <a href="product-details.html" class="ads-hover">
+                           <span>$3,000</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--start Layer slider-->
+      <section class="vehicle-banner2">
+         <div class="banner-image">
+            <div class="container pt-5 pb-5">
+               <div class="row">
+                  <div class="col-md-4 col-md-offset-5 pl-2 ">
+                     <div class="slider-content slider-animated-1">
+                        <h2 class="animated banner-heading">GET YOUR DESIRED CAR</h2>
+                        <label class="animated pb-2">SET THE WHEELS OF YOURS</label>
+                        <label class="animated">DREAM CAR in motion</label>
+                        <a href="" class="btn btn-default">Read Now</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--Footer-->
+      <section id="footer">
+         <footer>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <div class="logo pb-2">
+                           <a href="#"><img src="images/logo.png" alt="classify"></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet sectetuer esl adipiscing elit sed diam nonummy nibhi euismod tincidunt ut <span class="col">laoreet dolore</span> amet magna aliquam erat volutpat. </p>
+                        <p>Ut wisi enim ad minim veniam quis dest nostrud exerci tation ullamcorper norme
+                           suscipit lobortis commodo consequat.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <h4>Information</h4>
+                        <ul>
+                           <li>
+                              <a href="#">Our Story</a>
+                           </li>
+                           <li>
+                              <a href="#">Privacy & Policy</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms & Conditions</a>
+                           </li>
+                           <li>
+                              <a href="#">Shipping & Delivery</a>
+                           </li>
+                           <li>
+                              <a href="#">Careers</a>
+                           </li>
+                           <li>
+                              <a href="#">FAQ</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <h4>Privacy Info</h4>
+                        <ul>
+                           <li>
+                              <a href="#">Privacy & Policy</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms of Sale</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms of Use</a>
+                           </li>
+                           <li>
+                              <a href="#">Report Abuse</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms of Use</a>
+                           </li>
+                           <li>
+                              <a href="#">CSR Policy</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <h4>Newsletter</h4>
+                        <p class="sign">Lorem ipsum dolor sit amet sectetuer in adipiscing elit sed diam...</p>
+                        <p class="sign">Sign up for the newsletter !</p>
+                        <form method="post">
+                           <input type="email" name="email" placeholder="Your email address...">
+                           <input type="submit" name="submit" value="sign-up">
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="copyright text-center">
+                        <p>@ All Copyrights Reseverd 2019 - Design & Development by <a class="col" href="http://joinwebs.com">Weblinerz</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+         </footer>
+      </section>
+      <!--End Footer-->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/owl.carousel.js"></script>
+      <script src="js/default.js"></script>
+      <script src="js/greensock.js"></script>
+      <script src="js/layersliderjquery.js"></script>
+      <script src="js/transition.js"></script>
+      <script>
+        (function(){
+
+          $("#cart").on("click", function() {
+            $(".shopping-cart").fadeToggle( "fast");
+        });
+
+      })();
+    </script>
+    <script>
+        (function($) {
+  "use strict"
+
+  // NAVIGATION
+  var responsiveNav = $('#responsive-nav'),
+    catToggle = $('#responsive-nav .category-nav .category-header'),
+    catList = $('#responsive-nav .category-nav .category-list'),
+    menuToggle = $('#responsive-nav .menu-nav .menu-header'),
+    menuList = $('#responsive-nav .menu-nav .menu-list');
+
+  catToggle.on('click', function() {
+    menuList.removeClass('open');
+    catList.toggleClass('open');
+  });
+
+  menuToggle.on('click', function() {
+    catList.removeClass('open');
+    menuList.toggleClass('open');
+  });
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest(responsiveNav).length) {
+      if (responsiveNav.hasClass('open')) {
+        responsiveNav.removeClass('open');
+        $('#navigation').removeClass('shadow');
+      } else {
+        if ($(event.target).closest('.nav-toggle > button').length) {
+          if (!menuList.hasClass('open') && !catList.hasClass('open')) {
+            menuList.addClass('open');
+          }
+          $('#navigation').addClass('shadow');
+          responsiveNav.addClass('open');
+        }
+      }
+    }
+  });
+
+})(jQuery);
+    </script>
+   </body>
+</html>

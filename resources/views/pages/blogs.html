@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blogs</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700,600,800,900,300' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="layerslider/layerslider.css">
+</head>
+<body>
+
+    <!--Start Header section-->
+    <section id="header">
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 responsive-width-top">
+
+                        </div>
+                        <div class="col-sm-6 responsive-width-top">
+                            <div class="links text-right">
+                                <select class="select-language">
+                                    <option>EN</option>
+                                    <option>FR</option>
+                                    <option>AR</option>
+                                </select>
+                                <a href="accounts/dashboard.blade.php">My Account</a> |
+                                <a href="accounts/login.blade.php">Login</a> |
+                                <a href="accounts/registration.blade.php">Register</a> |
+                                <a href="ads/post_ads.blade.php">Post a Ad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end top bar-->
+
+            <!--start menu-bar-->
+            <div class="menu">
+                <div class="menu-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="classify"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row navbar-search">
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>City</option>
+                                        <option>Casablanca</option>
+                                        <option>Fez</option>
+                                        <option>Tangier</option>
+                                        <option>Marrakesh</option>
+                                        <option>Salé</option>
+                                        <option>Meknes</option>
+                                        <option>Rabat</option>
+                                        <option>Kenitra</option>
+                                        <option>Tetouan</option>
+                                        <option>Beni Mellal</option>
+                                        <option>Safi</option>
+                                        <option>Oujda</option>
+                                        <option>Inezgane Ait Melloul</option>
+                                        <option>Agadir-Ida Ou Tanan</option>
+                                        <option>Nador</option>
+                                        <option>Khouribga</option>
+                                        <option>Settat</option>
+                                        <option>Skhirate-Temara</option>
+                                        <option>El Jadida</option>
+                                        <option>Khenifra</option>
+                                        <option>Taza</option>
+                                        <option>Mohammedia</option>
+                                        <option>Larache</option>
+                                        <option>Khemisset</option>
+                                        <option>Sidi Kacem</option>
+                                        <option>Azrou</option>
+                                        <option>Errachidia</option>
+                                        <option>Tarudant</option>
+                                        <option>El Kelaa Des Sraghna</option>
+                                        <option>Berkane</option>
+                                        <option>Ouarzazate</option>
+                                        <option>Taourirt</option>
+                                        <option>Al Hoceima</option>
+                                        <option>Essaouira</option>
+                                        <option>El Hajeb</option>
+                                        <option>Tiznit</option>
+                                        <option>Azilal</option>
+                                        <option>Ifrane</option>
+                                        <option>Mediouna</option>
+                                        <option>Benslimane</option>
+                                        <option>Taounate</option>
+                                        <option>Jerada</option>
+                                        <option>Sefrou</option>
+                                        <option>Figuig</option>
+                                        <option>Tan-Tan</option>
+                                        <option>Nouaceur</option>
+                                        <option>Ouezzane</option>
+                                        <option>Chefchaouen</option>
+                                        <option>Boulemane</option>
+                                        <option>Al Haouz</option>
+                                        <option>Chichaoua</option>
+                                        <option>Zagora</option>
+                                        <option>Chtouka Ait Baha</option>
+                                        <option>Mechra Bel Ksiri</option>
+                                        <option>Moulay Yacoub</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>All Categories</option>
+
+                                        <option>Cars &amp; Bikes</option>
+                                        <option>Mobiles &amp; Tablets</option>
+                                        <option>Electronics &amp; Appliances</option>
+                                        <option>Real Estate</option>
+                                        <option>Services</option>
+                                        <option>Jobs</option>
+                                        <option>Home &amp; Lifestyle</option>
+                                        <option>Education &amp; Training</option>
+                                        <option>Pets &amp; Pet Care</option>
+                                        <option>Entertainment</option>
+                                        <option>Community</option>
+                                        <option>Events</option>
+                                        <option>Matrimonial</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 p-2 search-box">
+                                    <input class="keyword" type="text" name="keyword" placeholder="Search here...">
+                                    <button class="btn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end menu-bar-->
+            </div>
+        </header>
+    </section><!--End Header section-->
+
+    <!--start Layer slider-->
+    <section id="slider">
+        <div id="full-slider-wrapper">
+            <div id="layerslider" style="width:100%;height:200px;">
+                <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+                    <img style="margin: 0 !important;" src="images/slider/cat-bg.png" class="ls-bg" alt="Slide background"/>
+                    <h1 class="ls-l" style="font-family: 'Roboto Slab', serif; color: #fff; top:100px; ;font-weight: 700; top:60px;left: 0;right: 0;text-align: center;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:-400;">
+                        Blogs
+                    </h1>
+                    <h2 class="ls-l" style="font-family: Raleway, sans-serif; top: 110px; font-weight: 300; height: 40px; padding: 5px 22px; font-size: 17px; line-height: 37px; color: rgb(255, 255, 255); border-radius: 3px; white-space: nowrap;right: 0px; text-align: center; width: auto; border-width: 0px; margin-left: 0px; margin-top: 0px; transform-origin: 50% top 0px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002, 0, 0, 0, 1); opacity: 1; visibility: visible;" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;">
+                        Home&emsp;<i class="fa fa-caret-right" aria-hidden="true"></i>&emsp;Blogs
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section><!--end layer slider section-->
+    <!--404 page-->
+    <section id="detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="page-content">
+                        <!--Content area-->
+                        <article class="blog_post col-xs-12 col-sm-4 pb-5 wow fadeIn  slick-slide slick-current slick-active" data-wow-delay="100ms" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00" style="width: 325px; visibility: visible; animation-delay: 100ms; animation-name: fadeIn;">
+                            <div class="blog_post_content">
+
+
+                                <div class="blog_post_content_top">
+
+                                    <div class="post_thumbnail horsewayMedia-body">
+                                        <a class="thumbnail" href="#" tabindex="0">
+                                            <img class="xipblog_img img-responsive" src="images/blog1.png" alt="This is Secound Post For XipBlog">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="blog_post_content_bottom">
+
+                                    <p class="meta_date">
+                                        <span><i class="fa fa-calendar"></i> December 17 2018</span>
+
+                                    </p>
+
+                                    <h4 class="post_title">
+                                        <a href="#" tabindex="0">Sony Xperia XZ: Release date and everything you need to know</a>
+                                    </h4>
+
+
+                                    <div class="post_content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the ...</p>
+                                    </div>
+                                    <div class="content_more">
+                                        <a class="read_more text-btn" href="" tabindex="0">Read more <i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                        <article class="blog_post col-xs-12 col-sm-4 pb-5 wow fadeIn  slick-slide slick-current slick-active" data-wow-delay="100ms" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00" style="width: 325px; visibility: visible; animation-delay: 100ms; animation-name: fadeIn;">
+                            <div class="blog_post_content">
+
+
+                                <div class="blog_post_content_top">
+
+                                    <div class="post_thumbnail horsewayMedia-body">
+                                        <a class="thumbnail" href="#" tabindex="0">
+                                            <img class="xipblog_img img-responsive" src="images/blog2.png" alt="This is Secound Post For XipBlog">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="blog_post_content_bottom">
+
+                                    <p class="meta_date">
+                                        <span><i class="fa fa-calendar"></i> December 17 2018</span>
+
+                                    </p>
+
+                                    <h4 class="post_title"><a href="#" tabindex="0">Sony Xperia XZ: Release date and everything you need to know</a></h4>
+
+
+                                    <div class="post_content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the ...</p>
+                                    </div>
+                                    <div class="content_more">
+                                        <a class="read_more text-btn" href="#" tabindex="0">Read more <i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                        <article class="blog_post col-xs-12 col-sm-4 pb-5 wow fadeIn  slick-slide slick-current slick-active" data-wow-delay="100ms" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00" style="width: 325px; visibility: visible; animation-delay: 100ms; animation-name: fadeIn;">
+                            <div class="blog_post_content">
+
+
+                                <div class="blog_post_content_top">
+
+                                    <div class="post_thumbnail horsewayMedia-body">
+                                        <a class="thumbnail" href="#" tabindex="0">
+                                            <img class="xipblog_img img-responsive" src="images/blog3.png" alt="This is Secound Post For XipBlog">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="blog_post_content_bottom">
+
+                                    <p class="meta_date">
+                                        <span><i class="fa fa-calendar"></i> December 17 2018</span>
+
+                                    </p>
+
+                                    <h4 class="post_title"><a href="#" tabindex="0">Sony Xperia XZ: Release date and everything you need to know</a></h4>
+
+
+                                    <div class="post_content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the ...</p>
+                                    </div>
+                                    <div class="content_more">
+                                        <a class="read_more text-btn" href="#" tabindex="0">Read more <i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                        <article class="blog_post col-xs-12 col-sm-4 pb-5 wow fadeIn  slick-slide slick-current slick-active" data-wow-delay="100ms" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00" style="width: 325px; visibility: visible; animation-delay: 100ms; animation-name: fadeIn;">
+                            <div class="blog_post_content">
+
+
+                                <div class="blog_post_content_top">
+
+                                    <div class="post_thumbnail horsewayMedia-body">
+                                        <a class="thumbnail" href="#" tabindex="0">
+                                            <img class="xipblog_img img-responsive" src="images/blog4.png" alt="This is Secound Post For XipBlog">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="blog_post_content_bottom">
+
+                                    <p class="meta_date">
+                                        <span><i class="fa fa-calendar"></i> December 17 2018</span>
+
+                                    </p>
+
+                                    <h4 class="post_title"><a href="#" tabindex="0">Sony Xperia XZ: Release date and everything you need to know</a></h4>
+
+
+                                    <div class="post_content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the ...</p>
+                                    </div>
+                                    <div class="content_more">
+                                        <a class="read_more text-btn" href="#" tabindex="0">Read more <i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                        <article class="blog_post col-xs-12 col-sm-4 pb-5 wow fadeIn  slick-slide slick-current slick-active" data-wow-delay="100ms" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00" style="width: 325px; visibility: visible; animation-delay: 100ms; animation-name: fadeIn;">
+                            <div class="blog_post_content">
+
+
+                                <div class="blog_post_content_top">
+
+                                    <div class="post_thumbnail horsewayMedia-body">
+                                        <a class="thumbnail" href="#" tabindex="0">
+                                            <img class="xipblog_img img-responsive" src="images/blog1.png" alt="This is Secound Post For XipBlog">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="blog_post_content_bottom">
+
+                                    <p class="meta_date">
+                                        <span><i class="fa fa-calendar"></i> December 17 2018</span>
+
+                                    </p>
+
+                                    <h4 class="post_title">
+                                        <a href="#" tabindex="0">Sony Xperia XZ: Release date and everything you need to know</a>
+                                    </h4>
+
+
+                                    <div class="post_content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the ...</p>
+                                    </div>
+                                    <div class="content_more">
+                                        <a class="read_more text-btn" href="" tabindex="0">Read more <i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                        <article class="blog_post col-xs-12 col-sm-4 pb-5 wow fadeIn  slick-slide slick-current slick-active" data-wow-delay="100ms" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00" style="width: 325px; visibility: visible; animation-delay: 100ms; animation-name: fadeIn;">
+                            <div class="blog_post_content">
+
+
+                                <div class="blog_post_content_top">
+
+                                    <div class="post_thumbnail horsewayMedia-body">
+                                        <a class="thumbnail" href="#" tabindex="0">
+                                            <img class="xipblog_img img-responsive" src="images/blog2.png" alt="This is Secound Post For XipBlog">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="blog_post_content_bottom">
+
+                                    <p class="meta_date">
+                                        <span><i class="fa fa-calendar"></i> December 17 2018</span>
+
+                                    </p>
+
+                                    <h4 class="post_title"><a href="#" tabindex="0">Sony Xperia XZ: Release date and everything you need to know</a></h4>
+
+
+                                    <div class="post_content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the ...</p>
+                                    </div>
+                                    <div class="content_more">
+                                        <a class="read_more text-btn" href="#" tabindex="0">Read more <i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                        <article class="blog_post col-xs-12 col-sm-4 pb-5 wow fadeIn  slick-slide slick-current slick-active" data-wow-delay="100ms" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00" style="width: 325px; visibility: visible; animation-delay: 100ms; animation-name: fadeIn;">
+                            <div class="blog_post_content">
+
+
+                                <div class="blog_post_content_top">
+
+                                    <div class="post_thumbnail horsewayMedia-body">
+                                        <a class="thumbnail" href="#" tabindex="0">
+                                            <img class="xipblog_img img-responsive" src="images/blog3.png" alt="This is Secound Post For XipBlog">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="blog_post_content_bottom">
+
+                                    <p class="meta_date">
+                                        <span><i class="fa fa-calendar"></i> December 17 2018</span>
+
+                                    </p>
+
+                                    <h4 class="post_title"><a href="#" tabindex="0">Sony Xperia XZ: Release date and everything you need to know</a></h4>
+
+
+                                    <div class="post_content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the ...</p>
+                                    </div>
+                                    <div class="content_more">
+                                        <a class="read_more text-btn" href="#" tabindex="0">Read more <i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                        <article class="blog_post col-xs-12 col-sm-4 pb-5 wow fadeIn  slick-slide slick-current slick-active" data-wow-delay="100ms" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00" style="width: 325px; visibility: visible; animation-delay: 100ms; animation-name: fadeIn;">
+                            <div class="blog_post_content">
+
+
+                                <div class="blog_post_content_top">
+
+                                    <div class="post_thumbnail horsewayMedia-body">
+                                        <a class="thumbnail" href="#" tabindex="0">
+                                            <img class="xipblog_img img-responsive" src="images/blog4.png" alt="This is Secound Post For XipBlog">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="blog_post_content_bottom">
+
+                                    <p class="meta_date">
+                                        <span><i class="fa fa-calendar"></i> December 17 2018</span>
+
+                                    </p>
+
+                                    <h4 class="post_title"><a href="#" tabindex="0">Sony Xperia XZ: Release date and everything you need to know</a></h4>
+
+
+                                    <div class="post_content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the ...</p>
+                                    </div>
+                                    <div class="content_more">
+                                        <a class="read_more text-btn" href="#" tabindex="0">Read more <i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                        <!--Content area-->
+                    </div>
+                </div><!--col-md-8-->
+                <div class="col-md-4 col-sm-6 col-res-centered">
+                    <div class="sidebar">
+                        <div class="widget clearfix"><div class="widget__heading"><h4 class="inner-heading">All Categories</h4></div>        <div class="widget__content">
+                            <div class="widget__content_subcat">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="electronics.blade.php" title="View posts in Automotive">
+                                            <i class="fa fa-car" style="background-color:#46b75d;"></i>
+                                            Automotive                          <span>
+                                            &nbsp;                          </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="electronics.blade.php" title="View posts in ELECTRONICS">
+                                            <i class="fa fa-lightbulb-o" style="background-color:#ff7e3e;"></i>
+                                            ELECTRONICS                         <span>
+                                            &nbsp;                          </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="clothing.blade.php" title="View posts in Fashion">
+                                            <i class="fa fa-female" style="background-color:#86267e;"></i>
+                                            Fashion                         <span>
+                                            &nbsp;                          </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="jobs.blade.php" title="View posts in Jobs">
+                                            <i class="fa fa-briefcase" style="background-color:#009996;"></i>
+                                            Jobs                            <span>
+                                            &nbsp;                          </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="electronics.blade.php" title="View posts in MATRIMONIALS">
+                                            <i class="fa fa-heart" style="background-color:#e76b77;"></i>
+                                            MATRIMONIALS                            <span>
+                                            &nbsp;                          </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="classified_pets.html" title="View posts in Pets &amp; Animals">
+                                            <i class="fa fa-paw" style="background-color:#39444c;"></i>
+                                            Pets &amp; Animals                          <span>
+                                            &nbsp;                          </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="realestate.blade.php" title="View posts in REAL ESTATE">
+                                            <i class="fa fa-home" style="background-color:#adb337;"></i>
+                                            REAL ESTATE                         <span>
+                                            &nbsp;                          </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="realestate.blade.php" title="View posts in Services">
+                                            <i class="fa fa-wrench" style="background-color:#44baff;"></i>
+                                            Services                            <span>
+                                            &nbsp;                          </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!--widget__content_subcat-->
+                        </div><!--widget__content-->
+                    </div><div class="widget clearfix"><div class="widget__heading"><h4 class="inner-heading">Latest Ads</h4></div><ul class="list-unstyled widget__latest_ad media-list">          <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="https://demo.joinwebs.com/classify/wp-content/uploads/2017/10/car1.png" alt="Cursus dapibus odio">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">
+                                <a href="#">Cursus dapibus odio</a>
+                            </h5>
+                            <span class="price">
+                            €6000                   </span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt eros malesuada suscipit ultrices. Pellentesque non neque eget augue fringilla aliquam in quis nisl. Etiam facilisis dignissim felis nec gravida. Donec id arcu facilisis justo blandit tincidunt. Cras ipsum libero, vulputate et scelerisque vitae, molestie ut augue. Morbi risus augue, bibendum eu auctor a, tristique […]</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="https://demo.joinwebs.com/classify/wp-content/uploads/2017/10/ice-cream1.png" alt="Video Ads Sample Lorem ipsum dolor sit">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">
+                                <a href="#">Video Ads Sample Lorem ipsum dolor sit</a>
+                            </h5>
+                            <span class="price">
+                            $b50                    </span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nunc nisl, efficitur quis blandit pretium, ullamcorper vitae purus. In in velit quis orci lacinia convallis id ac purus. Etiam in diam volutpat, commodo lorem et, finibus ante. Sed arcu quam, hendrerit quis porta quis, malesuada ac quam. Nulla imperdiet tristique congue. Nunc sollicitudin orci ut […]</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="https://demo.joinwebs.com/classify/wp-content/uploads/2017/10/cats-for-sale1.png" alt="Donec tempor id risus vel ullamcorper">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">
+                                <a href="#">Donec tempor id risus vel ullamcorper</a>
+                            </h5>
+                            <span class="price">
+                            $800                    </span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend ac urna nec consectetur. Vivamus sed mattis nunc. Duis at ultricies quam, vitae tristique felis. Sed vestibulum erat eget leo convallis dignissim. Vestibulum eros nisi, pharetra eu enim in, commodo aliquet massa. Donec vitae ullamcorper odio. Donec luctus venenatis leo, tempus auctor eros sollicitudin eu. […]</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="https://demo.joinwebs.com/classify/wp-content/uploads/2017/10/Mechanic1.png" alt="Quisque eget ipsum vitae enim tristique">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">
+                                <a href="#">Quisque eget ipsum vitae enim tristique</a>
+                            </h5>
+                            <span class="price">
+                            BZ$1500                 </span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla lectus id est mattis, a feugiat diam ornare. Vestibulum fringilla diam nec diam iaculis tempus. Sed volutpat enim nec finibus commodo. Donec quis augue sed tortor egestas pretium sed in nisl. Quisque eget ipsum vitae enim tristique fermentum sit amet sed justo. Donec nisl augue, […]</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="https://demo.joinwebs.com/classify/wp-content/uploads/2017/10/mobile1.png" alt="Etiam sit amet quam lorem">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">
+                                <a href="#">Etiam sit amet quam lorem</a>
+                            </h5>
+                            <span class="price">
+                            €500                    </span>
+                            <p>Sed quis sapien felis. Suspendisse vel sodales orci. Nam sollicitudin lectus a turpis tincidunt, sed egestas enim imperdiet. Fusce scelerisque fringilla sem sit amet consectetur. Donec non tellus ac felis porta convallis. Nunc eget risus nec quam scelerisque dignissim sed vulputate lacus. Cras ut elit blandit, egestas metus sed, laoreet arcu. Suspendisse potenti. Praesent scelerisque […]</p>
+                        </div>
+                    </li>
+                </ul></div><div class="widget clearfix"><div class="widget__heading"><h4 class="inner-heading">Tags</h4></div><div class="tagcloud">
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-1" style="font-size: 22pt;">ads</a>
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-2" style="font-size: 8pt;">bracelet</a>
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-3" style="font-size: 14.3pt;">computer</a>
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-4" style="font-size: 8pt;">dogs</a>
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-5" style="font-size: 18.5pt;">fashion</a>
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-6" style="font-size: 8pt;">for rent</a>
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-7" style="font-size: 8pt;">iphone</a>
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-8" style="font-size: 8pt;">job</a>
+                   <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-9" style="font-size: 18.5pt;">laptop</a>
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-10" style="font-size: 8pt;">Mechanic</a>
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-11" style="font-size: 8pt;">mobile</a>
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-12" style="font-size: 14.3pt;">sale</a>
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-13" style="font-size: 8pt;">services</a>
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-14" style="font-size: 14.3pt;">technology</a>
+                    <a href="#" class="tag-cloud-link tag-link-77 tag-link-position-15" style="font-size: 14.3pt;">woman</a></div>
+                </div>              </div>
+            </div><!--col-md-4-->
+        </div><!--row-->
+    </div><!--container-->
+</section>
+<!--Footer-->
+<section id="footer">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <div class="logo pb-2">
+                            <a href="#"><img src="images/logo.png" alt="classify"></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet sectetuer esl adipiscing elit sed diam nonummy nibhi euismod tincidunt ut <span class="col">laoreet dolore</span> amet magna aliquam erat volutpat. </p>
+                        <p>Ut wisi enim ad minim veniam quis dest nostrud exerci tation ullamcorper norme
+                        suscipit lobortis commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h4>Information</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Our Story</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy & Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Shipping & Delivery</a>
+                            </li>
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h4>Privacy Info</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Privacy & Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Sale</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Use</a>
+                            </li>
+                            <li>
+                                <a href="#">Report Abuse</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Use</a>
+                            </li>
+                            <li>
+                                <a href="#">CSR Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h4>Newsletter</h4>
+                        <p class="sign">Lorem ipsum dolor sit amet sectetuer in adipiscing elit sed diam...</p>
+                        <p class="sign">Sign up for the newsletter !</p>
+                        <form method="post">
+                            <input type="email" name="email" placeholder="Your email address...">
+                            <input type="submit" name="submit" value="sign-up">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright text-center">
+                        <p>@ All Copyrights Reseverd 2019 - Design & Development by <a class="col" href="http://joinwebs.com">Weblinerz</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+</section>
+<!--End Footer-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/default.js"></script>
+<script src="js/greensock.js"></script>
+<script src="js/layersliderjquery.js"></script>
+<script src="js/transition.js"></script>
+<script>
+        (function(){
+
+          $("#cart").on("click", function() {
+            $(".shopping-cart").fadeToggle( "fast");
+        });
+
+      })();
+    </script>
+    <script>
+        (function($) {
+  "use strict"
+
+  // NAVIGATION
+  var responsiveNav = $('#responsive-nav'),
+    catToggle = $('#responsive-nav .category-nav .category-header'),
+    catList = $('#responsive-nav .category-nav .category-list'),
+    menuToggle = $('#responsive-nav .menu-nav .menu-header'),
+    menuList = $('#responsive-nav .menu-nav .menu-list');
+
+  catToggle.on('click', function() {
+    menuList.removeClass('open');
+    catList.toggleClass('open');
+  });
+
+  menuToggle.on('click', function() {
+    catList.removeClass('open');
+    menuList.toggleClass('open');
+  });
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest(responsiveNav).length) {
+      if (responsiveNav.hasClass('open')) {
+        responsiveNav.removeClass('open');
+        $('#navigation').removeClass('shadow');
+      } else {
+        if ($(event.target).closest('.nav-toggle > button').length) {
+          if (!menuList.hasClass('open') && !catList.hasClass('open')) {
+            menuList.addClass('open');
+          }
+          $('#navigation').addClass('shadow');
+          responsiveNav.addClass('open');
+        }
+      }
+    }
+  });
+
+})(jQuery);
+    </script>
+</body>
+</html>

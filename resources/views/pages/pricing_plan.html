@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pricing Plan</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700,600,800,900,300' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="layerslider/layerslider.css">
+    <style>
+    .demo{ background: #f2f2f2; padding-top: 70px; padding-bottom: 70px;}
+    .pricingTable{
+        padding-bottom: 30px;
+        /* margin: 0 15px;*/
+        background: #fff;
+        text-align: center;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .pricingTable:hover{ box-shadow: 0 0 10px rgba(195, 67, 67, 0.3) inset,0 0 20px -5px rgba(0,0,0,0.8); }
+    .pricingTable .pricingTable-header{
+        padding: 20px 15px 45px;
+        background: #7aba7a;
+        -webkit-clip-path: polygon(50% 100%, 100% 60%, 100% 0, 0 0, 0 60%);
+        clip-path: polygon(50% 100%, 100% 60%, 100% 0, 0 0, 0 60%);
+        position: relative;
+    }
+    .pricingTable .pricingTable-header:before{
+        content: "";
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        position: absolute;
+        right: -50%;
+        top: -130%;
+        background: repeating-radial-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0.2) 20%);
+        transition: all 0.5s ease 0s;
+    }
+    .pricingTable:hover .pricingTable-header:before{ right: 50%; }
+    .pricingTable .title{
+        font-size: 30px;
+        color: #fff;
+        margin: 0;
+    }
+    .pricingTable .price-value{
+        display: block;
+        font-size: 40px;
+        color: #fff;
+        margin: 0 0 20px 0;
+        transition: all 0.3s ease 0s;
+    }
+    .pricingTable .pricing-content{
+        padding: 30px 25px 0;
+        margin: 0;
+        list-style: none;
+    }
+    .pricingTable .pricing-content li{
+        font-size: 18px;
+        color: #909090;
+        line-height: 40px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        border-bottom: 2px solid rgba(0,0,0,0.15);
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .pricingTable .pricing-content li:last-child{ border-bottom: none; }
+    .pricingTable .pricing-content li i{ color: #7aba7a; }
+    .pricingTable .pricingTable-signup{
+        display: block;
+        padding: 18px 0;
+        margin: 0 25px;
+        border-radius: 10px;
+        background: #7aba7a;
+        font-size: 16px;
+        color: #fff;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s ease 0s;
+    }
+    .pricingTable .pricingTable-signup:hover{
+        letter-spacing: 2px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.7) , 0 0 0 7px rgba(255,255,255,0.5) inset;
+    }
+    .pricingTable .pricingTable-signup:before{
+        content: "";
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        background: repeating-radial-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0.2) 20%);
+        position: absolute;
+        top: -180%;
+        right: -40%;
+        transition: all 0.8s ease 0s;
+    }
+    .pricingTable .pricingTable-signup:hover:before{ right: 40%; }
+    .pricingTable.blue .pricingTable-header,
+    .pricingTable.blue .pricingTable-signup{ background: #36a6b2; }
+    .pricingTable.blue .pricing-content li i{ color: #36a6b2; }
+    .pricingTable.pink .pricingTable-header,
+    .pricingTable.pink .pricingTable-signup{ background: #f03c79; }
+    .pricingTable.pink .pricing-content li i{ color: #f03c79; }
+    @media only screen and (max-width: 990px){
+        .pricingTable{ margin-bottom: 30px; }
+    }
+    @media only screen and (max-width: 479px){
+        .pricingTable{ margin: 0; }
+        .pricingTable .pricing-content li{ font-size: 15px; }
+    }
+    .main-heading {
+        background: url(../images/sep.png) no-repeat bottom;
+        margin: -20px 0 70px 0;
+    }
+    .main-heading h2 {
+        font-weight: 600;
+        color: #000000;
+        padding: 0 0 0 0;
+        font-size: 25px;
+    }
+    .img-responsive{
+        margin: 0 auto;
+    }
+</style>
+</head>
+<body>
+
+    <!--Start Header section-->
+    <section id="header">
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 responsive-width-top">
+
+                        </div>
+                        <div class="col-sm-6 responsive-width-top">
+                            <div class="links text-right">
+                                <select class="select-language">
+                                    <option>EN</option>
+                                    <option>FR</option>
+                                    <option>AR</option>
+                                </select>
+                                <a href="accounts/dashboard.blade.php">My Account</a> |
+                                <a href="accounts/login.blade.php">Login</a> |
+                                <a href="accounts/registration.blade.php">Register</a> |
+                                <a href="ads/post_ads.blade.php">Post a Ad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end top bar-->
+
+            <!--start menu-bar-->
+            <div class="menu">
+                <div class="menu-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="classify"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row navbar-search">
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>City</option>
+                                        <option>Casablanca</option>
+                                        <option>Fez</option>
+                                        <option>Tangier</option>
+                                        <option>Marrakesh</option>
+                                        <option>Salé</option>
+                                        <option>Meknes</option>
+                                        <option>Rabat</option>
+                                        <option>Kenitra</option>
+                                        <option>Tetouan</option>
+                                        <option>Beni Mellal</option>
+                                        <option>Safi</option>
+                                        <option>Oujda</option>
+                                        <option>Inezgane Ait Melloul</option>
+                                        <option>Agadir-Ida Ou Tanan</option>
+                                        <option>Nador</option>
+                                        <option>Khouribga</option>
+                                        <option>Settat</option>
+                                        <option>Skhirate-Temara</option>
+                                        <option>El Jadida</option>
+                                        <option>Khenifra</option>
+                                        <option>Taza</option>
+                                        <option>Mohammedia</option>
+                                        <option>Larache</option>
+                                        <option>Khemisset</option>
+                                        <option>Sidi Kacem</option>
+                                        <option>Azrou</option>
+                                        <option>Errachidia</option>
+                                        <option>Tarudant</option>
+                                        <option>El Kelaa Des Sraghna</option>
+                                        <option>Berkane</option>
+                                        <option>Ouarzazate</option>
+                                        <option>Taourirt</option>
+                                        <option>Al Hoceima</option>
+                                        <option>Essaouira</option>
+                                        <option>El Hajeb</option>
+                                        <option>Tiznit</option>
+                                        <option>Azilal</option>
+                                        <option>Ifrane</option>
+                                        <option>Mediouna</option>
+                                        <option>Benslimane</option>
+                                        <option>Taounate</option>
+                                        <option>Jerada</option>
+                                        <option>Sefrou</option>
+                                        <option>Figuig</option>
+                                        <option>Tan-Tan</option>
+                                        <option>Nouaceur</option>
+                                        <option>Ouezzane</option>
+                                        <option>Chefchaouen</option>
+                                        <option>Boulemane</option>
+                                        <option>Al Haouz</option>
+                                        <option>Chichaoua</option>
+                                        <option>Zagora</option>
+                                        <option>Chtouka Ait Baha</option>
+                                        <option>Mechra Bel Ksiri</option>
+                                        <option>Moulay Yacoub</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>All Categories</option>
+
+                                        <option>Cars &amp; Bikes</option>
+                                        <option>Mobiles &amp; Tablets</option>
+                                        <option>Electronics &amp; Appliances</option>
+                                        <option>Real Estate</option>
+                                        <option>Services</option>
+                                        <option>Jobs</option>
+                                        <option>Home &amp; Lifestyle</option>
+                                        <option>Education &amp; Training</option>
+                                        <option>Pets &amp; Pet Care</option>
+                                        <option>Entertainment</option>
+                                        <option>Community</option>
+                                        <option>Events</option>
+                                        <option>Matrimonial</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 p-2 search-box">
+                                    <input class="keyword" type="text" name="keyword" placeholder="Search here...">
+                                    <button class="btn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end menu-bar-->
+            </div>
+
+        </header>
+    </section><!--End Header section-->
+
+    <!--start Layer slider-->
+    <section id="slider">
+        <div id="full-slider-wrapper">
+            <div id="layerslider" style="width:100%;height:200px;">
+                <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+                    <img style="margin: 0 !important;" src="images/slider/cat-bg.png" class="ls-bg" alt="Slide background"/>
+                    <h1 class="ls-l" style="font-family: 'Roboto Slab', serif; color: #fff; top:100px; ;font-weight: 700; left:116px; top:70px;left: 0;right: 0;text-align: center;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:-400;">
+                        Pricing Plan
+                    </h1>
+                    <h2 class="ls-l" style="font-family:'Raleway', sans-serif;top:110px;font-weight: 300;height:40px;padding:5px 22px;font-size:17px;line-height:37px;color:#ffffff;border-radius:3px;white-space: nowrap;left: 0;right: 0;text-align: center;" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;">
+                        Choose a premium plan for featured ads
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="demo">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main-heading text-center">
+                        <h2>Find a plan that's right for you</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <div class="pricingTable">
+                        <div class="pricingTable-header">
+                            <h3 class="title">Basic</h3>
+                            <div class="price-value">$10.99 / month</div>
+                        </div>
+                        <ul class="pricing-content">
+                            <li><i class="fa fa-check"></i> 50GB Disk Space</li>
+                            <li><i class="fa fa-times"></i> 50 Email Accounts</li>
+                            <li><i class="fa fa-check"></i> 50GB Bandwidth</li>
+                            <li><i class="fa fa-times"></i> 10 Subdomains</li>
+                            <li><i class="fa fa-check"></i> 15 Domains</li>
+                        </ul>
+                        <a href="#" class="pricingTable-signup">Get plan now</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="pricingTable">
+                        <div class="pricingTable-header">
+                            <h3 class="title">Standard</h3>
+                            <div class="price-value">$19.99 / month</div>
+                        </div>
+                        <ul class="pricing-content">
+                            <li><i class="fa fa-check"></i> 50GB Disk Space</li>
+                            <li><i class="fa fa-times"></i> 50 Email Accounts</li>
+                            <li><i class="fa fa-check"></i> 50GB Bandwidth</li>
+                            <li><i class="fa fa-times"></i> 10 Subdomains</li>
+                            <li><i class="fa fa-check"></i> 15 Domains</li>
+                        </ul>
+                        <a href="#" class="pricingTable-signup">Get plan now</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="pricingTable blue">
+                        <div class="pricingTable-header">
+                            <h3 class="title">Professional</h3>
+                            <div class="price-value">$50.99 / month</div>
+                        </div>
+                        <ul class="pricing-content">
+                            <li><i class="fa fa-check"></i> 60GB Disk Space</li>
+                            <li><i class="fa fa-check"></i> 60 Email Accounts</li>
+                            <li><i class="fa fa-check"></i> 60GB Bandwidth</li>
+                            <li><i class="fa fa-times"></i> 15 Subdomains</li>
+                            <li><i class="fa fa-check"></i> 20 Domains</li>
+                        </ul>
+                        <a href="#" class="pricingTable-signup">Get plan now</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="pricingTable blue">
+                        <div class="pricingTable-header">
+                            <h3 class="title">Unlimited</h3>
+                            <div class="price-value">$99.99 / month</div>
+                        </div>
+                        <ul class="pricing-content">
+                            <li><i class="fa fa-check"></i> 60GB Disk Space</li>
+                            <li><i class="fa fa-check"></i> 60 Email Accounts</li>
+                            <li><i class="fa fa-check"></i> 60GB Bandwidth</li>
+                            <li><i class="fa fa-times"></i> 15 Subdomains</li>
+                            <li><i class="fa fa-check"></i> 20 Domains</li>
+                        </ul>
+                        <a href="#" class="pricingTable-signup">Get plan now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main-heading text-center">
+                        <h2>Our Partners</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="p-3 col-12 col-md-6 col-lg-3 pb-5">
+                    <div class="client-wrapper">
+                        <div class="wrap-img">
+                            <img src="images/1.png" class="img-responsive clients-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 col-12 col-md-6 col-lg-3 pb-5">
+                    <div class="client-wrapper">
+                        <div class="wrap-img">
+                            <img src="images/2.png" class="img-responsive clients-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 col-12 col-md-6 col-lg-3 pb-5">
+                    <div class="client-wrapper">
+                        <div class="wrap-img">
+                            <img src="images/3.png" class="img-responsive clients-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 col-12 col-md-6 col-lg-3 pb-5">
+                    <div class="client-wrapper">
+                        <div class="wrap-img">
+                            <img src="images/4.png" class="img-responsive clients-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 col-12 col-md-6 col-lg-3 pb-5">
+                    <div class="client-wrapper">
+                        <div class="wrap-img">
+                            <img src="images/5.png" class="img-responsive clients-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 col-12 col-md-6 col-lg-3 pb-5">
+                    <div class="client-wrapper">
+                        <div class="wrap-img">
+                            <img src="images/1.png" class="img-responsive clients-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-3 col-12 col-md-6 col-lg-3 pb-5">
+                    <div class="client-wrapper">
+                        <div class="wrap-img">
+                            <img src="images/1.png" class="img-responsive clients-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-3 col-12 col-md-6 col-lg-3 pb-5">
+                    <div class="client-wrapper">
+                        <div class="wrap-img">
+                            <img src="images/1.png" class="img-responsive clients-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <section id="footer">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <div class="logo pb-2">
+                                <a href="#"><img src="images/logo.png" alt="classify"></a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet sectetuer esl adipiscing elit sed diam nonummy nibhi euismod tincidunt ut <span class="col">laoreet dolore</span> amet magna aliquam erat volutpat. </p>
+                            <p>Ut wisi enim ad minim veniam quis dest nostrud exerci tation ullamcorper norme
+                                suscipit lobortis commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h4>Information</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Our Story</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy & Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shipping & Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h4>Privacy Info</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Privacy & Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of Sale</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report Abuse</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#">CSR Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h4>Newsletter</h4>
+                            <p class="sign">Lorem ipsum dolor sit amet sectetuer in adipiscing elit sed diam...</p>
+                            <p class="sign">Sign up for the newsletter !</p>
+                            <form method="post">
+                                <input type="email" name="email" placeholder="Your email address...">
+                                <input type="submit" name="submit" value="sign-up">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright text-center">
+                            <p>@ All Copyrights Reseverd 2019 - Design & Development by <a class="col" href="http://joinwebs.com">Weblinerz</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+        </footer>
+    </section>
+<!--End Footer-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/default.js"></script>
+<script src="js/greensock.js"></script>
+<script src="js/layersliderjquery.js"></script>
+<script src="js/transition.js"></script>
+<script>
+        (function(){
+
+          $("#cart").on("click", function() {
+            $(".shopping-cart").fadeToggle( "fast");
+        });
+
+      })();
+    </script>
+    <script>
+        (function($) {
+  "use strict"
+
+  // NAVIGATION
+  var responsiveNav = $('#responsive-nav'),
+    catToggle = $('#responsive-nav .category-nav .category-header'),
+    catList = $('#responsive-nav .category-nav .category-list'),
+    menuToggle = $('#responsive-nav .menu-nav .menu-header'),
+    menuList = $('#responsive-nav .menu-nav .menu-list');
+
+  catToggle.on('click', function() {
+    menuList.removeClass('open');
+    catList.toggleClass('open');
+  });
+
+  menuToggle.on('click', function() {
+    catList.removeClass('open');
+    menuList.toggleClass('open');
+  });
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest(responsiveNav).length) {
+      if (responsiveNav.hasClass('open')) {
+        responsiveNav.removeClass('open');
+        $('#navigation').removeClass('shadow');
+      } else {
+        if ($(event.target).closest('.nav-toggle > button').length) {
+          if (!menuList.hasClass('open') && !catList.hasClass('open')) {
+            menuList.addClass('open');
+          }
+          $('#navigation').addClass('shadow');
+          responsiveNav.addClass('open');
+        }
+      }
+    }
+  });
+
+})(jQuery);
+    </script>
+
+
+</body>
+</html>

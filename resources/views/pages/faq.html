@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+   <head lang="en">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>FAQ</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700,600,800,900,300' rel='stylesheet' type='text/css'>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+      <link rel="stylesheet" type="text/css" href="css/default.css">
+      <link rel="stylesheet" type="text/css" href="css/responsive.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+      <link rel="stylesheet" type="text/css" href="layerslider/layerslider.css">
+      <style>
+         /*sidebar*/
+         .sidebar .widget{
+         border: 1px solid #e1e1e1;
+         padding: 35px;
+         margin: 0 0 40px 0;
+         }
+         .sidebar .widget__premium{
+         margin: 0 0 10px 0;
+         overflow: hidden;
+         }
+         .textwidget{
+         overflow: hidden;
+         }
+         .advance_search button[type="submit"]{
+         width: 100%;
+         padding: 10px 15px;
+         background: transparent;
+         box-shadow: none;
+         border: 1px solid #e1e1e1;
+         text-transform: uppercase;
+         font-weight: 500;
+         color: #3f3d57;
+         }
+         .advance_search button[type="submit"]:hover{
+         background: #a0ce4e;
+         border-color: #a0ce4e;
+         color: #ffffff;
+         }
+         .sidebar .widget__premium li{
+         position: relative;
+         display: block;
+         margin-bottom: 15px;
+         }
+         .sidebar .widget__premium li a img{
+         width: 100%;
+         }
+         .sidebar .widget__premium li a.item-hover{
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         z-index: 100;
+         background: rgba(63, 61, 87, 0.9);
+         text-align: center;
+         top: 0;
+         left: 0;
+         visibility: hidden;
+         text-decoration: none;
+         }
+         .sidebar .widget__premium .item-hover span{
+         color: #ffffff;
+         position: relative;
+         top: 45%;
+         display: block;
+         }
+         .sidebar .widget__premium li:hover .item-hover{
+         visibility: visible;
+         }
+         .sidebar .widget__latest_ad{
+         margin: 0 0 15px 0;
+         }
+         .widget__latest_ad .media-object{
+         width: 80px;
+         height: 80px;
+         }
+         .widget__latest_ad .media-heading a{
+         color: #3f3d57;
+         text-decoration: none;
+         display: block;
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         font-size: 16px;
+         }
+         .widget__latest_ad .media-heading a:hover{
+         color: #a0ce4e;
+         }
+         .widget__latest_ad .media-body .price{
+         color: #a0ce4e;
+         }
+         .widget__latest_ad p{
+         margin: 0;
+         height: 45px;
+         overflow: hidden;
+         display: -webkit-box;
+         -webkit-line-clamp: 2;
+         -webkit-box-orient: vertical;
+         }
+         .widget .tagcloud a{
+         background: #f6f6f6;
+         padding: 10px;
+         color: #888888 !important;
+         text-decoration: none;
+         display: inline-block;
+         margin: 0 5px 10px 0;
+         font-size:14px !important;
+         }
+         .widget .tagcloud a:hover{
+         background: #a0ce4e;
+         padding: 10px;
+         color: #ffffff !important;
+         }
+         .sidebar .widget .sidebar-account-overview{
+         background: #f8f8f8;
+         padding: 0 0 0 30px;
+         margin-bottom: 10px;
+         }
+         .sidebar .widget .sidebar-account-overview p{
+         display: inline-block;
+         width: 65%;
+         padding: 10px 0 0 0;
+         color: #888888;
+         }
+         .sidebar .widget .sidebar-account-overview span{
+         color: #888888;
+         }
+         .widget .widget__content .widget__content_subcat ul li a{
+         width: auto;
+         background: #f8f8f8;
+         margin: 0 0 5px 0;
+         display: block;
+         text-decoration: none;
+         color: #888888;
+         }
+         .widget .widget__content .widget__content_subcat ul li a i{
+         width: 44px;
+         height: 44px;
+         text-align: center;
+         line-height: 44px;
+         font-size: 18px;
+         color: #ffffff;
+         background: #3f3d57;
+         margin-right: 15px;
+         }
+         .widget .widget__content .widget__content_subcat ul li a img.classify__widgetimg{
+         width: 44px;
+         height: 44px;
+         margin-right: 15px;
+         }
+         .widget .widget__content .widget__content_subcat ul li a span{
+         float: right;
+         display: inline-block;
+         padding-right: 15px;
+         line-height: 44px;
+         }
+         .widget .widget__content .widget__content_subcat ul li a:hover,
+         .widget .widget__content .widget__content_subcat ul li a:hover span{
+         color: #a0ce4e;
+         }
+         .widget .widget__content .widget__content_subcat ul li a:hover i{
+         background: #a0ce4e;
+         }
+         #wp-calendar{
+         width: 100%;
+         }
+         #wp-calendar td#today{
+         color: #b6d91a;
+         }
+         #wp-calendar caption{
+         margin-left: 15px;
+         }
+         #wp-calendar th{
+         text-align: center;
+         }
+         #wp-calendar td{
+         text-align: center;
+         }
+         td#prev a:hover, td#next a:hover,
+         td#prev a:focus, td#next a:focus{
+         color: #b6d91a;
+         }
+         .card{
+            padding-top: 20px;
+            padding-bottom: 20px;
+         }
+         .card-header {
+           padding: .75rem 1.25rem;
+           margin-bottom: 0;
+
+           /* border-bottom: 1px solid rgba(0,0,0,.125); */
+           /* height: 250px; */
+           border-left: 2px solid #3EC8AC;
+           border-right: 2px solid #4E90A4;
+           border-radius: 5px;
+           -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+           box-sizing: border-box;
+           background-position: 0 0, 0 100%;
+           background-repeat: no-repeat;
+           -webkit-background-size: 100% 2px;
+           -moz-background-size: 100% 2px;
+           background-size: 100% 2px;
+           background-image: -webkit-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -webkit-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
+           background-image: -moz-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -moz-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
+           background-image: -o-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -o-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
+           background-image: linear-gradient(to right, #3EC8AC 0%, #4E90A4 100%), linear-gradient(to right, #3EC8AC 0%, #4E90A4 100%);
+           /* padding-top: 50px; */
+         }
+         .card-header h5{
+          margin-top: 0;
+         }
+         .card-body {
+           -ms-flex: 1 1 auto;
+           flex: 1 1 auto;
+           padding: 1.25rem;
+           position: relative;
+           background: #fff !important;
+           z-index: 999;
+       }
+       .featured-article a{
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: 500;
+       }
+       button.btn-link{
+        color: #028482;
+        outline: 0 !important;
+       }
+      </style>
+   </head>
+   <body>
+      <!--Start Header section-->
+      <section id="header">
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 responsive-width-top">
+
+                        </div>
+                        <div class="col-sm-6 responsive-width-top">
+                            <div class="links text-right">
+                                <select class="select-language">
+                                    <option>EN</option>
+                                    <option>FR</option>
+                                    <option>AR</option>
+                                </select>
+                                <a href="accounts/dashboard.blade.php">My Account</a> |
+                                <a href="accounts/login.blade.php">Login</a> |
+                                <a href="accounts/registration.blade.php">Register</a> |
+                                <a href="ads/post_ads.blade.php">Post a Ad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end top bar-->
+
+            <!--start menu-bar-->
+            <div class="menu">
+                <div class="menu-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="classify"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row navbar-search">
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>City</option>
+                                        <option>Casablanca</option>
+                                        <option>Fez</option>
+                                        <option>Tangier</option>
+                                        <option>Marrakesh</option>
+                                        <option>Salé</option>
+                                        <option>Meknes</option>
+                                        <option>Rabat</option>
+                                        <option>Kenitra</option>
+                                        <option>Tetouan</option>
+                                        <option>Beni Mellal</option>
+                                        <option>Safi</option>
+                                        <option>Oujda</option>
+                                        <option>Inezgane Ait Melloul</option>
+                                        <option>Agadir-Ida Ou Tanan</option>
+                                        <option>Nador</option>
+                                        <option>Khouribga</option>
+                                        <option>Settat</option>
+                                        <option>Skhirate-Temara</option>
+                                        <option>El Jadida</option>
+                                        <option>Khenifra</option>
+                                        <option>Taza</option>
+                                        <option>Mohammedia</option>
+                                        <option>Larache</option>
+                                        <option>Khemisset</option>
+                                        <option>Sidi Kacem</option>
+                                        <option>Azrou</option>
+                                        <option>Errachidia</option>
+                                        <option>Tarudant</option>
+                                        <option>El Kelaa Des Sraghna</option>
+                                        <option>Berkane</option>
+                                        <option>Ouarzazate</option>
+                                        <option>Taourirt</option>
+                                        <option>Al Hoceima</option>
+                                        <option>Essaouira</option>
+                                        <option>El Hajeb</option>
+                                        <option>Tiznit</option>
+                                        <option>Azilal</option>
+                                        <option>Ifrane</option>
+                                        <option>Mediouna</option>
+                                        <option>Benslimane</option>
+                                        <option>Taounate</option>
+                                        <option>Jerada</option>
+                                        <option>Sefrou</option>
+                                        <option>Figuig</option>
+                                        <option>Tan-Tan</option>
+                                        <option>Nouaceur</option>
+                                        <option>Ouezzane</option>
+                                        <option>Chefchaouen</option>
+                                        <option>Boulemane</option>
+                                        <option>Al Haouz</option>
+                                        <option>Chichaoua</option>
+                                        <option>Zagora</option>
+                                        <option>Chtouka Ait Baha</option>
+                                        <option>Mechra Bel Ksiri</option>
+                                        <option>Moulay Yacoub</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>All Categories</option>
+
+                                        <option>Cars &amp; Bikes</option>
+                                        <option>Mobiles &amp; Tablets</option>
+                                        <option>Electronics &amp; Appliances</option>
+                                        <option>Real Estate</option>
+                                        <option>Services</option>
+                                        <option>Jobs</option>
+                                        <option>Home &amp; Lifestyle</option>
+                                        <option>Education &amp; Training</option>
+                                        <option>Pets &amp; Pet Care</option>
+                                        <option>Entertainment</option>
+                                        <option>Community</option>
+                                        <option>Events</option>
+                                        <option>Matrimonial</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 p-2 search-box">
+                                    <input class="keyword" type="text" name="keyword" placeholder="Search here...">
+                                    <button class="btn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end menu-bar-->
+            </div>
+        </header>
+    </section>
+      <!--End Header section-->
+      <!--start Layer slider-->
+      <section id="slider">
+         <div id="full-slider-wrapper">
+            <div id="layerslider" style="width:100%;height:200px;">
+               <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+                  <img style="margin: 0 !important;" src="images/slider/cat-bg.png" class="ls-bg" alt="Slide background"/>
+                  <h1 class="ls-l" style="font-family: 'Roboto Slab', serif; color: #fff; top:100px; ;font-weight: 700; top:60px;left: 0;right: 0;text-align: center;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:-400;">
+                     How can we help you today?
+                  </h1>
+                  <h2 class="ls-l" style="font-family: Raleway, sans-serif; top: 110px; font-weight: 300; height: 40px; padding: 5px 22px; font-size: 17px; line-height: 37px; color: rgb(255, 255, 255); border-radius: 3px; white-space: nowrap;right: 0px; text-align: center; width: auto; border-width: 0px; margin-left: 0px; margin-top: 0px; transform-origin: 50% top 0px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002, 0, 0, 0, 1); opacity: 1; visibility: visible;" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;">
+                     Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                  </h2>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--end layer slider section-->
+      <!--404 page-->
+      <section id="detail">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="page-content">
+                    <h4 class="inner-heading">Featured Articles</h4>
+                    <div class="col-md-12 featured-article mx-auto">
+                        <div class="col-md-4 pt-3 pb-3">
+                            <div>
+                                <a href="#">Lorem ipsum dolor</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-3 pb-3">
+                            <div>
+                                <a href="#">Lorem ipsum dolor</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-3 pb-3">
+                            <div>
+                                <a href="#">Lorem ipsum dolor</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-3 pb-3">
+                            <div>
+                                <a href="#">Lorem ipsum dolor</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-3 pb-3">
+                            <div>
+                                <a href="#">Lorem ipsum dolor</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-3 pb-3">
+                            <div>
+                                <a href="#">Lorem ipsum dolor</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-3 pb-3">
+                            <div>
+                                <a href="#">Lorem ipsum dolor</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-3 pb-3">
+                            <div>
+                                <a href="#">Lorem ipsum dolor</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-3 pb-3">
+                            <div>
+                                <a href="#">Lorem ipsum dolor</a>
+                            </div>
+                        </div>
+                    </div>
+                     <!--Content area-->
+                     <div class="col-md-12 pt-5">
+                     <div id="accordion" id="faqExample">
+                        <h4 class="inner-heading">Frequently Asked Questions</h4>
+                        <div class="row">
+                            <div class="col-md-8 ">
+                                <div class="card">
+                           <div class="card-header" id="headingOne">
+                              <h5 class="mb-0">
+                                 <button class="btn btn-link" type="button" data-parent="#accordion" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 Q: Can I chose the locum I want?
+                                 </button>
+                              </h5>
+                           </div>
+                           <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqExample">
+                              <div class="card-body">
+                                 <p>When posting a job, store will have two options 1. Publish job to asll locums, 2. Directly send to locums.</p>
+                              </div>
+                           </div>
+                        </div>
+                            </div>
+                            <div class="col-md-8 ">
+                                <div class="card">
+                           <div class="card-header" id="headingTwo">
+                              <h5 class="mb-0">
+                                 <button class="btn btn-link" type="button" data-parent="#accordion" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 Q: How much does this service cost?
+                                 </button>
+                              </h5>
+                           </div>
+                           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
+                              <div class="card-body">
+                                 <p>This service is FREE for Locums. this includes automatic inovicing and direy management.<br>Stores will have three payment packages, 1. Pay as you go, 2. Monthly pakage, 3. Annual pakage. For more information please click the link below.</p>
+                              </div>
+                           </div>
+                        </div>
+                            </div>
+                            <div class="col-md-8 ">
+                                <div class="card">
+                           <div class="card-header" id="headingThree">
+                              <h5 class="mb-0">
+                                 <button class="btn btn-link collapsed" type="button" data-parent="#accordion" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 Q. How do I cancel a booking?
+                                 </button>
+                              </h5>
+                           </div>
+                           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                              <div class="card-body">
+                                 <p>Cancellation has to be submitted before 48 hours of a job. This can be done on the cancelation tab on the menu bar or by calling directly.</p>
+                              </div>
+                           </div>
+                        </div>
+                            </div>
+                            <div class="col-md-8 ">
+                                <div class="card">
+                           <div class="card-header" id="heading4">
+                              <h5 class="mb-0">
+                                 <button class="btn btn-link collapsed" type="button" data-parent="#accordion" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                 Q. How do I leave feedback for locums?
+                                 </button>
+                              </h5>
+                           </div>
+                           <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#faqExample">
+                              <div class="card-body">
+                                 <p>Store user will be asked to leave a review on each completed job, which both store and locum will be able to review.</p>
+                              </div>
+                           </div>
+                        </div>
+                            </div>
+                            <div class="col-md-8 ">
+                                <div class="card">
+                           <div class="card-header" id="heading5">
+                              <h5 class="mb-0">
+                                 <button class="btn btn-link collapsed" type="button" data-parent="#accordion" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                 Q. What do I need to set up a profile?
+                                 </button>
+                              </h5>
+                           </div>
+                           <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#faqExample">
+                              <div class="card-body">
+                                 <p>When sighning up, Locums needs a profile image, valid GOC, OPL And Indemity insurance numbers with attachable documentation as proof, and all other skills documents. <br>Stores profile requires your store inforamtion and requirements.</p>
+                              </div>
+                           </div>
+                        </div>
+                            </div>
+
+                            <div class="col-md-8 ">
+                                <div class="card">
+                           <div class="card-header" id="heading7">
+                              <h5 class="mb-0">
+                                 <button class="btn btn-link collapsed" type="button" data-parent="#accordion" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                 Q. How do I sign up?
+                                 </button>
+                              </h5>
+                           </div>
+                           <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#faqExample">
+                              <div class="card-body">
+                                 <p>Sighing up take no longer then 3 mintues. Simply upload the required information and documentation and off you go!</p>
+                              </div>
+                           </div>
+                        </div>
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+                     <!--Content area-->
+                  </div>
+               </div>
+               <!--col-md-8-->
+            </div>
+            <!--row-->
+         </div>
+         <!--container-->
+      </section>
+      <!--Footer-->
+      <section id="footer">
+         <footer>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <div class="logo pb-2">
+                           <a href="#"><img src="images/logo.png" alt="classify"></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet sectetuer esl adipiscing elit sed diam nonummy nibhi euismod tincidunt ut <span class="col">laoreet dolore</span> amet magna aliquam erat volutpat. </p>
+                        <p>Ut wisi enim ad minim veniam quis dest nostrud exerci tation ullamcorper norme
+                           suscipit lobortis commodo consequat.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <h4>Information</h4>
+                        <ul>
+                           <li>
+                              <a href="#">Our Story</a>
+                           </li>
+                           <li>
+                              <a href="#">Privacy & Policy</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms & Conditions</a>
+                           </li>
+                           <li>
+                              <a href="#">Shipping & Delivery</a>
+                           </li>
+                           <li>
+                              <a href="#">Careers</a>
+                           </li>
+                           <li>
+                              <a href="#">FAQ</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <h4>Privacy Info</h4>
+                        <ul>
+                           <li>
+                              <a href="#">Privacy & Policy</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms of Sale</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms of Use</a>
+                           </li>
+                           <li>
+                              <a href="#">Report Abuse</a>
+                           </li>
+                           <li>
+                              <a href="#">Terms of Use</a>
+                           </li>
+                           <li>
+                              <a href="#">CSR Policy</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                     <div class="widget">
+                        <h4>Newsletter</h4>
+                        <p class="sign">Lorem ipsum dolor sit amet sectetuer in adipiscing elit sed diam...</p>
+                        <p class="sign">Sign up for the newsletter !</p>
+                        <form method="post">
+                           <input type="email" name="email" placeholder="Your email address...">
+                           <input type="submit" name="submit" value="sign-up">
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="copyright text-center">
+                        <p>@ All Copyrights Reseverd 2019 - Design & Development by <a class="col" href="http://joinwebs.com">Weblinerz</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+         </footer>
+      </section>
+      <!--End Footer-->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/owl.carousel.js"></script>
+      <script src="js/default.js"></script>
+      <script src="js/greensock.js"></script>
+      <script src="js/layersliderjquery.js"></script>
+      <script src="js/transition.js"></script>
+      <script>
+        (function(){
+
+          $("#cart").on("click", function() {
+            $(".shopping-cart").fadeToggle( "fast");
+        });
+
+      })();
+    </script>
+    <script>
+        (function($) {
+  "use strict"
+
+  // NAVIGATION
+  var responsiveNav = $('#responsive-nav'),
+    catToggle = $('#responsive-nav .category-nav .category-header'),
+    catList = $('#responsive-nav .category-nav .category-list'),
+    menuToggle = $('#responsive-nav .menu-nav .menu-header'),
+    menuList = $('#responsive-nav .menu-nav .menu-list');
+
+  catToggle.on('click', function() {
+    menuList.removeClass('open');
+    catList.toggleClass('open');
+  });
+
+  menuToggle.on('click', function() {
+    catList.removeClass('open');
+    menuList.toggleClass('open');
+  });
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest(responsiveNav).length) {
+      if (responsiveNav.hasClass('open')) {
+        responsiveNav.removeClass('open');
+        $('#navigation').removeClass('shadow');
+      } else {
+        if ($(event.target).closest('.nav-toggle > button').length) {
+          if (!menuList.hasClass('open') && !catList.hasClass('open')) {
+            menuList.addClass('open');
+          }
+          $('#navigation').addClass('shadow');
+          responsiveNav.addClass('open');
+        }
+      }
+    }
+  });
+
+})(jQuery);
+    </script>
+   </body>
+</html>

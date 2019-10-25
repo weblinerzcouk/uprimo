@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post Ads - Clothes</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700,600,800,900,300' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="layerslider/layerslider.css">
+
+    <style>
+    /*input { margin: 15px 10px !important;}*/
+
+    .dropzone {
+        text-align: center;
+        background: #eee;
+        padding: 50px;
+    }
+    .dropzone h1{
+        font-weight: 400;
+        font-size: 50px;
+        color: #ccc;
+    }
+    .dropzone.is-dragover {
+       background-color: #e6ecef;
+    }
+
+    .dragover {
+       background-color: red;
+    }
+    textarea#editor{
+        background: #eee;
+        border: none;
+        width: 100%;
+    }
+    .price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.price .header-mid{
+    background: #028482;
+    color: white;
+  font-size: 25px;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #7aba7a;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 16px;
+}
+
+.btn.btn-post {
+    display: inline-block;
+    border-style: none;
+    border: none;
+    border: 1px solid #028482;
+    width: 200px;
+    height: auto;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: lighter;
+    background: #028482;
+    border-radius: 3px;
+    color: #fff;
+    /* text-transform: uppercase; */
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+body{
+    background-color: #eee;
+}
+    </style>
+
+</head>
+<body>
+
+    <!--Start Header section-->
+    <section id="header">
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 responsive-width-top">
+
+                        </div>
+                        <div class="col-sm-6 responsive-width-top">
+                            <div class="links text-right">
+                                <select class="select-language">
+                                    <option>EN</option>
+                                    <option>FR</option>
+                                    <option>AR</option>
+                                </select>
+                                <a href="accounts/dashboard.blade.php">My Account</a> |
+                                <a href="accounts/login.blade.php">Login</a> |
+                                <a href="accounts/registration.blade.php">Register</a> |
+                                <a href="ads/post_ads.blade.php">Post a Ad</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end top bar-->
+
+            <!--start menu-bar-->
+            <div class="menu">
+                <div class="menu-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="classify"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row navbar-search">
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>City</option>
+                                        <option>Casablanca</option>
+                                        <option>Fez</option>
+                                        <option>Tangier</option>
+                                        <option>Marrakesh</option>
+                                        <option>Salé</option>
+                                        <option>Meknes</option>
+                                        <option>Rabat</option>
+                                        <option>Kenitra</option>
+                                        <option>Tetouan</option>
+                                        <option>Beni Mellal</option>
+                                        <option>Safi</option>
+                                        <option>Oujda</option>
+                                        <option>Inezgane Ait Melloul</option>
+                                        <option>Agadir-Ida Ou Tanan</option>
+                                        <option>Nador</option>
+                                        <option>Khouribga</option>
+                                        <option>Settat</option>
+                                        <option>Skhirate-Temara</option>
+                                        <option>El Jadida</option>
+                                        <option>Khenifra</option>
+                                        <option>Taza</option>
+                                        <option>Mohammedia</option>
+                                        <option>Larache</option>
+                                        <option>Khemisset</option>
+                                        <option>Sidi Kacem</option>
+                                        <option>Azrou</option>
+                                        <option>Errachidia</option>
+                                        <option>Tarudant</option>
+                                        <option>El Kelaa Des Sraghna</option>
+                                        <option>Berkane</option>
+                                        <option>Ouarzazate</option>
+                                        <option>Taourirt</option>
+                                        <option>Al Hoceima</option>
+                                        <option>Essaouira</option>
+                                        <option>El Hajeb</option>
+                                        <option>Tiznit</option>
+                                        <option>Azilal</option>
+                                        <option>Ifrane</option>
+                                        <option>Mediouna</option>
+                                        <option>Benslimane</option>
+                                        <option>Taounate</option>
+                                        <option>Jerada</option>
+                                        <option>Sefrou</option>
+                                        <option>Figuig</option>
+                                        <option>Tan-Tan</option>
+                                        <option>Nouaceur</option>
+                                        <option>Ouezzane</option>
+                                        <option>Chefchaouen</option>
+                                        <option>Boulemane</option>
+                                        <option>Al Haouz</option>
+                                        <option>Chichaoua</option>
+                                        <option>Zagora</option>
+                                        <option>Chtouka Ait Baha</option>
+                                        <option>Mechra Bel Ksiri</option>
+                                        <option>Moulay Yacoub</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 p-2 dropdown-search">
+                                    <select class="select">
+                                        <option>All Categories</option>
+
+                                        <option>Cars &amp; Bikes</option>
+                                        <option>Mobiles &amp; Tablets</option>
+                                        <option>Electronics &amp; Appliances</option>
+                                        <option>Real Estate</option>
+                                        <option>Services</option>
+                                        <option>Jobs</option>
+                                        <option>Home &amp; Lifestyle</option>
+                                        <option>Education &amp; Training</option>
+                                        <option>Pets &amp; Pet Care</option>
+                                        <option>Entertainment</option>
+                                        <option>Community</option>
+                                        <option>Events</option>
+                                        <option>Matrimonial</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 p-2 search-box">
+                                    <input class="keyword" type="text" name="keyword" placeholder="Search here...">
+                                    <button class="btn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end menu-bar-->
+            </div>
+        </header>
+    </section><!--End Header section-->
+
+    <!--start Layer slider-->
+    <section id="slider">
+        <div id="full-slider-wrapper">
+            <div id="layerslider" style="width:100%;height:200px;">
+                <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+                    <img style="margin: 0 !important;" src="images/slider/cat-bg.png" class="ls-bg" alt="Slide background"/>
+                    <h1 class="ls-l" style="font-family: 'Roboto Slab', serif; color: #fff; top:100px; ;font-weight: 700; top:60px;left: 0;right: 0;text-align: center;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:-400;">
+                        Post Ads
+                    </h1>
+                    <h2 class="ls-l" style="font-family: Raleway, sans-serif; top: 110px; font-weight: 300; height: 40px; padding: 5px 22px; font-size: 17px; line-height: 37px; color: rgb(255, 255, 255); border-radius: 3px; white-space: nowrap;right: 0px; text-align: center; width: auto; border-width: 0px; margin-left: 0px; margin-top: 0px; transform-origin: 50% top 0px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002, 0, 0, 0, 1); opacity: 1; visibility: visible;" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;">
+                        Home&emsp;<i class="fa fa-caret-right" aria-hidden="true"></i>&emsp;Post Ads
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section><!--end layer slider section-->
+    <!--404 page-->
+    <section class="post_ads_section">
+        <div class="container">
+            <div class="row pt-5 pb-5">
+                <div class="col-lg-8 col-md-12 bg-white double-border">
+                    <div class="pt-4">
+                        <h2 class="theme-text-color">Post Your Ads</h2>
+                        <p>Posting your ads on WZsell is free! However, all ads must follow our rules.</p>
+                        <hr>
+                        <div class="form-section p-3">
+                            <div class="row">
+                                <div class="col-md-12 pb-5">
+                                    <label class="ad-posting-label">Ad Title</label>
+                                    <input type="text" name="" class="ad-posting" placeholder="e.g Brand new Sumsung s6 for sale">
+                                </div>
+
+                                <div class="col-md-6 pb-5">
+                                    <label class="ad-posting-label">Clothing For</label>
+                                    <select class="ad-posting">
+                                        <option>Select an option</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6 pb-5">
+                                    <label class="ad-posting-label">Clothing Type</label>
+                                    <input type="text" name="" class="ad-posting" placeholder="e.g">
+                                </div>
+
+                                <div class="col-md-6 pb-5">
+                                    <label class="ad-posting-label">Size</label>
+                                    <select class="ad-posting">
+                                        <option>Select an option</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6 pb-5">
+                                    <label class="ad-posting-label">Condition</label>
+                                    <input type="text" name="" class="ad-posting" placeholder="e.g">
+                                </div>
+
+                                <div class="col-md-6 pb-5">
+                                    <label class="ad-posting-label">Age</label>
+                                    <select class="ad-posting">
+                                        <option>Select an option</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6 pb-5">
+                                    <label class="ad-posting-label">Price</label>
+                                    <input type="text" name="" class="ad-posting" placeholder="e.g">
+                                </div>
+
+                                <div class="col-md-12 pb-5">
+                                    <label class="ad-posting-label">Photos for your ad</label>
+                                    <div class="" draggable='true'>
+                                        <div id='dropzone' class='dropzone'>
+                                            <h1><i><label style="color: #028482;">Drop Files</label> to upload</i></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 pb-5">
+                                    <label class="ad-posting-label">Ad description</label>
+                                    <div>
+                                        <div>
+                                            <textarea id="editor" rows="10" cols="100"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 pb-5">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="ad-posting-label">
+                                                Type of Ad
+                                            </label>
+                                            <div class="p-5" style="background: #eee">
+                                                <div class="can-toggle demo-rebrand-2">
+                                                  <input id="e" type="checkbox">
+                                                  <label for="e">
+                                                    <div class="can-toggle__switch" data-checked="I want to sell" data-unchecked="I want to buy">
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div class="col-md-6 pb-5">
+                                    <label class="ad-posting-label">Your Name</label>
+                                    <input type="text" name="" class="ad-posting" placeholder="e.g John Doe">
+                                </div>
+
+                                <div class="col-md-6 pb-5">
+                                    <label class="ad-posting-label">Your Email ID</label>
+                                    <input type="text" name="" class="ad-posting" placeholder="e.g abc@gmail.com">
+                                </div>
+
+                                <div class="col-md-6 pb-5">
+                                    <label class="ad-posting-label">Your Mobile Number</label>
+                                    <input type="text" name="" class="ad-posting" placeholder="e.g +92 333 3333333">
+                                </div>
+
+                                <div class="col-md-6 pb-5">
+                                    <label class="ad-posting-label">Your Address</label>
+                                    <input type="text" name="" class="ad-posting" placeholder="e.g house no 34">
+                                </div>
+
+                                <div class="col-md-12 pb-5">
+                                   <div class="row">
+                                       <div class="col-md-4">
+                                         <ul class="price">
+                                            <li class="header">Free</li>
+                                            <li class="grey"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <a href="#" class="btn btn-default">Select</a>
+                                            </li>
+                                        </ul>
+                                       </div>
+
+                                       <div class="col-md-4">
+                                           <ul class="price">
+                                            <li class="header-mid">Premium</li>
+                                            <li class="grey"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <a href="#" class="btn btn-default">Select</a>
+                                            </li>
+                                        </ul>
+                                       </div>
+
+                                       <div class="col-md-4">
+                                         <ul class="price">
+                                            <li class="header">Business</li>
+                                            <li class="grey"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <a href="#" class="btn btn-default">Select</a>
+                                            </li>
+                                        </ul>
+                                       </div>
+                                   </div>
+                                </div>
+
+                                <div class="col-md-12 pb-5">
+                                    <label class="ad-posting-label">Make your Ad featured</label>
+                                    <form action="#" class="ad-features-button">
+                                      <p>
+                                        <input type="radio" id="test1" name="radio-group" checked>
+                                        <label for="test1">Direct Bank Transfer</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="test2" name="radio-group">
+                                        <label for="test2">Cheque Payment</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="test3" name="radio-group">
+                                        <label for="test3">Paypal</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="test4" name="radio-group">
+                                        <label for="test4">Credit Card</label>
+                                    </p>
+                                </form>
+
+                                </div>
+
+                                <div class="col-md-12 pb-5 text-center">
+                                    <a href="#" class="btn btn-post">Publish My Adjfurhu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="sidebar bg-white">
+                        <div class="widget clearfix p-0">
+                            <div class="widget__heading">
+                                <h3 class="m-0 p-4">Safety Tips</h3>
+                            </div>
+                            <div class="widget__content p-4">
+                                <div class="widget__content_subcat">
+                                  <p class="content-head">Posting your ads on WZsell is free! However, all ads must follow our rules.</p>
+                                    <ol class="ml-4">
+                                        <li>
+                                            <p>Make sure you post in the correct category.</p>
+                                        </li>
+                                        <li>
+                                            <p>Make sure you post in the correct category.</p>
+                                        </li>
+                                        <li>
+                                            <p>Make sure you post in the correct category.</p>
+                                        </li>
+                                        <li>
+                                            <p>Make sure you post in the correct category.</p>
+                                        </li>
+                                        <li>
+                                            <p>Make sure you post in the correct category.</p>
+                                        </li>
+                                        <li>
+                                            <p>Make sure you post in the correct category.</p>
+                                        </li>
+                                        <li>
+                                            <p>Make sure you post in the correct category.</p>
+                                        </li>
+                                        <li>
+                                            <p>Make sure you post in the correct category.</p>
+                                        </li>
+                                        <li>
+                                            <p>Make sure you post in the correct category.</p>
+                                        </li>
+                                    </ul>
+                                </div><!--widget__content_subcat-->
+                            </div><!--widget__content-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <section id="footer">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <div class="logo pb-2">
+                                <a href="#"><img src="images/logo.png" alt="classify"></a>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet sectetuer esl adipiscing elit sed diam nonummy nibhi euismod tincidunt ut <span class="col">laoreet dolore</span> amet magna aliquam erat volutpat. </p>
+                            <p>Ut wisi enim ad minim veniam quis dest nostrud exerci tation ullamcorper norme
+                            suscipit lobortis commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h4>Information</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Our Story</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy & Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shipping & Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h4>Privacy Info</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Privacy & Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of Sale</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report Abuse</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#">CSR Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h4>Newsletter</h4>
+                            <p class="sign">Lorem ipsum dolor sit amet sectetuer in adipiscing elit sed diam...</p>
+                            <p class="sign">Sign up for the newsletter !</p>
+                            <form method="post">
+                                <input type="email" name="email" placeholder="Your email address...">
+                                <input type="submit" name="submit" value="sign-up">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright text-center">
+                            <p>@ All Copyrights Reseverd 2019 - Design & Development by <a class="col" href="http://joinwebs.com">Weblinerz</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+        </footer>
+    </section>
+    <!--End Footer-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/default.js"></script>
+    <script src="js/greensock.js"></script>
+    <script src="js/layersliderjquery.js"></script>
+    <script src="js/transition.js"></script>
+    <script>
+        var dropzone = $('#dropzone')
+
+
+        dropzone.on('drag dragstart dragend dragover dragenter dragleave drop', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        })
+
+        dropzone.on('dragover dragenter', function() {
+            $(this).addClass('is-dragover');
+        })
+        dropzone.on('dragleave dragend drop', function() {
+            $(this).removeClass('is-dragover');
+        })
+
+        dropzone.on('drop',function(e) {
+            var files = e.originalEvent.dataTransfer.files;
+    // Now select your file upload field
+    $('input_field_file').prop('files',files)
+});
+</script>
+<script>
+        (function(){
+
+          $("#cart").on("click", function() {
+            $(".shopping-cart").fadeToggle( "fast");
+        });
+
+      })();
+    </script>
+    <script>
+        (function($) {
+  "use strict"
+
+  // NAVIGATION
+  var responsiveNav = $('#responsive-nav'),
+    catToggle = $('#responsive-nav .category-nav .category-header'),
+    catList = $('#responsive-nav .category-nav .category-list'),
+    menuToggle = $('#responsive-nav .menu-nav .menu-header'),
+    menuList = $('#responsive-nav .menu-nav .menu-list');
+
+  catToggle.on('click', function() {
+    menuList.removeClass('open');
+    catList.toggleClass('open');
+  });
+
+  menuToggle.on('click', function() {
+    catList.removeClass('open');
+    menuList.toggleClass('open');
+  });
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest(responsiveNav).length) {
+      if (responsiveNav.hasClass('open')) {
+        responsiveNav.removeClass('open');
+        $('#navigation').removeClass('shadow');
+      } else {
+        if ($(event.target).closest('.nav-toggle > button').length) {
+          if (!menuList.hasClass('open') && !catList.hasClass('open')) {
+            menuList.addClass('open');
+          }
+          $('#navigation').addClass('shadow');
+          responsiveNav.addClass('open');
+        }
+      }
+    }
+  });
+
+})(jQuery);
+    </script>
+</body>
+</html>
